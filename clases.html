@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestras Clases | Tribu de Hierro Gym</title>
+    <link rel="stylesheet" href="css/clases.css">
+    <link rel="icon" href="/assets/image/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header" role="banner">
+        <div class="container">
+            <nav class="navbar" aria-label="Navegación principal">
+                <div class="logo">
+                    <a href="home.html">
+                        <div class="logo-image-container">
+                            <img src="assets/image/logo-gym.png" alt="Tribu de Hierro Gym - Logo" class="round-logo">
+                        </div>
+                        <h1>Tribu de Hierro Gym</h1>
+                    </a>
+                </div>
+                
+                <button class="menu-toggle" aria-expanded="false" aria-controls="main-menu" aria-label="Menú principal">
+                    <span class="hamburger"></span>
+                </button>
+                
+                <ul class="nav-links" id="main-menu">
+                    <li><a href="home.html">Inicio</a></li>
+                    <li class="mega-menu">
+                        <button class="mega-menu-button" aria-expanded="false" aria-controls="clases-menu" aria-current="page">
+                            Clases <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                            <span class="visually-hidden">Desplegar menú</span>
+                        </button>
+                        <div class="mega-menu-content" id="clases-menu" aria-labelledby="clases-heading">
+                            <h2 id="clases-heading" class="visually-hidden">Submenú de Clases</h2>
+                            <div class="mega-menu-row">
+                                <div class="mega-menu-column">
+                                    <h3>Musculación</h3>
+                                    <ul>
+                                        <li><a href="#musculacion" data-filter="musculacion">Principiantes</a></li>
+                                        <li><a href="#musculacion" data-filter="musculacion">Intermedios</a></li>
+                                        <li><a href="#musculacion" data-filter="musculacion">Avanzados</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h3>Cardio</h3>
+                                    <ul>
+                                        <li><a href="#spinning" data-filter="spinning">Spinning</a></li>
+                                        <li><a href="#zumba" data-filter="zumba">Zumba</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h3>Funcional</h3>
+                                    <ul>
+                                        <li><a href="#crossfit" data-filter="crossfit">CrossFit</a></li>
+                                        <li><a href="#functional" data-filter="functional">Functional Training</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h3>Bienestar</h3>
+                                    <ul>
+                                        <li><a href="#yoga" data-filter="yoga">Yoga</a></li>
+                                        <li><a href="#pilates" data-filter="pilates">Pilates</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="entrenadores.html">Entrenadores</a></li>
+                    <li><a href="precios.html">Precios</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+                
+                <aside class="cta-container">
+                    <a href="registro.html" class="btn-cta">Únete ahora a la Tribu</a>
+                </aside>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="classes-hero section-padding">
+            <div class="container">
+                <h1 class="hero-title">Descubre Nuestras Clases</h1>
+                <p class="hero-subtitle">Entrenamientos diseñados para todos los niveles y objetivos</p>
+            </div>
+        </section>
+
+        <section class="classes-filter section-padding">
+            <div class="container">
+                <h2 class="section-title">Filtrar por Categoría</h2>
+                <div class="filter-options">
+                    <label class="filter-option">
+                        <input type="radio" name="category-filter" value="all" id="filter-all" checked class="visually-hidden">
+                        <span class="filter-label">Todas</span>
+                    </label>
+                    <label class="filter-option">
+                        <input type="radio" name="category-filter" value="musculacion" id="filter-musculacion" class="visually-hidden">
+                        <span class="filter-label">Musculación</span>
+                    </label>
+                    <label class="filter-option">
+                        <input type="radio" name="category-filter" value="crossfit" id="filter-crossfit" class="visually-hidden">
+                        <span class="filter-label">CrossFit</span>
+                    </label>
+                    <label class="filter-option">
+                        <input type="radio" name="category-filter" value="yoga" id="filter-yoga" class="visually-hidden">
+                        <span class="filter-label">Yoga</span>
+                    </label>
+                    <label class="filter-option">
+                        <input type="radio" name="category-filter" value="spinning" id="filter-spinning" class="visually-hidden">
+                        <span class="filter-label">Spinning</span>
+                    </label>
+                    <label class="filter-option">
+                        <input type="radio" name="category-filter" value="functional" id="filter-functional" class="visually-hidden">
+                        <span class="filter-label">Funcional</span>
+                    </label>
+                </div>
+            </div>
+        </section>
+
+        <section class="classes-gallery section-padding">
+            <div class="container">
+                <h2 class="section-title">Explora Nuestras Clases</h2>
+                <div class="classes-grid">
+                    <!-- Clase 1 - Musculación -->
+                    <article class="class-card" data-category="musculacion">
+                        <div class="class-card-inner">
+                            <div class="class-card-front">
+                                <div class="class-image-container">
+                                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Entrenamiento de Fuerza" class="class-image">
+                                </div>
+                                <div class="class-info">
+                                    <h3 class="class-title">Entrenamiento de Fuerza</h3>
+                                    <p class="class-instructor">Con Carlos Martínez</p>
+                                    <div class="class-meta">
+                                        <span class="class-duration"><i class="fas fa-clock"></i> 60 min</span>
+                                        <span class="class-level"><i class="fas fa-signal"></i> Todos los niveles</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="class-card-back">
+                                <h3 class="class-title">Entrenamiento de Fuerza</h3>
+                                <p class="class-description">Enfocado en el desarrollo de la fuerza y la hipertrofia muscular mediante técnicas avanzadas de levantamiento.</p>
+                                <ul class="class-benefits">
+                                    <li><i class="fas fa-check-circle"></i> Aumento de masa muscular</li>
+                                    <li><i class="fas fa-check-circle"></i> Mejora de la fuerza</li>
+                                    <li><i class="fas fa-check-circle"></i> Técnica correcta</li>
+                                </ul>
+                                <a href="#horario-musculacion" class="button primary-button">Ver Horarios</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Clase 2 - CrossFit -->
+                    <article class="class-card" data-category="crossfit">
+                        <div class="class-card-inner">
+                            <div class="class-card-front">
+                                <div class="class-image-container">
+                                    <img src="https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="WOD Intenso" class="class-image">
+                                </div>
+                                <div class="class-info">
+                                    <h3 class="class-title">WOD Intenso</h3>
+                                    <p class="class-instructor">Con Javier Rodríguez</p>
+                                    <div class="class-meta">
+                                        <span class="class-duration"><i class="fas fa-clock"></i> 45 min</span>
+                                        <span class="class-level"><i class="fas fa-signal"></i> Avanzado</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="class-card-back">
+                                <h3 class="class-title">WOD Intenso</h3>
+                                <p class="class-description">Rutinas de alta intensidad para mejorar tu condición física general y resistencia.</p>
+                                <ul class="class-benefits">
+                                    <li><i class="fas fa-check-circle"></i> Quema calórica elevada</li>
+                                    <li><i class="fas fa-check-circle"></i> Mejora cardiovascular</li>
+                                    <li><i class="fas fa-check-circle"></i> Entrenamiento funcional</li>
+                                </ul>
+                                <a href="#horario-crossfit" class="button primary-button">Ver Horarios</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Clase 3 - Yoga -->
+                    <article class="class-card" data-category="yoga">
+                        <div class="class-card-inner">
+                            <div class="class-card-front">
+                                <div class="class-image-container">
+                                    <img src="https://images.unsplash.com/photo-1545205597-3d9d02c29597?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Vinyasa Flow" class="class-image">
+                                </div>
+                                <div class="class-info">
+                                    <h3 class="class-title">Vinyasa Flow</h3>
+                                    <p class="class-instructor">Con Ana López</p>
+                                    <div class="class-meta">
+                                        <span class="class-duration"><i class="fas fa-clock"></i> 60 min</span>
+                                        <span class="class-level"><i class="fas fa-signal"></i> Intermedio</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="class-card-back">
+                                <h3 class="class-title">Vinyasa Flow</h3>
+                                <p class="class-description">Secuencias fluidas de posturas para conectar cuerpo y mente a través del movimiento y la respiración.</p>
+                                <ul class="class-benefits">
+                                    <li><i class="fas fa-check-circle"></i> Flexibilidad</li>
+                                    <li><i class="fas fa-check-circle"></i> Reducción de estrés</li>
+                                    <li><i class="fas fa-check-circle"></i> Mejora postural</li>
+                                </ul>
+                                <a href="#horario-yoga" class="button primary-button">Ver Horarios</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Clase 4 - Spinning -->
+                    <article class="class-card" data-category="spinning">
+                        <div class="class-card-inner">
+                            <div class="class-card-front">
+                                <div class="class-image-container">
+                                    <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Indoor Cycling" class="class-image">
+                                </div>
+                                <div class="class-info">
+                                    <h3 class="class-title">Indoor Cycling</h3>
+                                    <p class="class-instructor">Con Laura Méndez</p>
+                                    <div class="class-meta">
+                                        <span class="class-duration"><i class="fas fa-clock"></i> 45 min</span>
+                                        <span class="class-level"><i class="fas fa-signal"></i> Todos los niveles</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="class-card-back">
+                                <h3 class="class-title">Indoor Cycling</h3>
+                                <p class="class-description">Clase de ciclismo estacionario para quemar calorías y aumentar la resistencia cardiovascular con música motivadora.</p>
+                                <ul class="class-benefits">
+                                    <li><i class="fas fa-check-circle"></i> Quema hasta 600 calorías</li>
+                                    <li><i class="fas fa-check-circle"></i> Bajo impacto</li>
+                                    <li><i class="fas fa-check-circle"></i> Mejora cardiovascular</li>
+                                </ul>
+                                <a href="#horario-spinning" class="button primary-button">Ver Horarios</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Clase 5 - Musculación -->
+                    <article class="class-card" data-category="musculacion">
+                        <div class="class-card-inner">
+                            <div class="class-card-front">
+                                <div class="class-image-container">
+                                    <img src="https://images.unsplash.com/photo-1534258936925-c58bed479fcb?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Hipertrofia Específica" class="class-image">
+                                </div>
+                                <div class="class-info">
+                                    <h3 class="class-title">Hipertrofia Específica</h3>
+                                    <p class="class-instructor">Con Carlos Martínez</p>
+                                    <div class="class-meta">
+                                        <span class="class-duration"><i class="fas fa-clock"></i> 75 min</span>
+                                        <span class="class-level"><i class="fas fa-signal"></i> Avanzado</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="class-card-back">
+                                <h3 class="class-title">Hipertrofia Específica</h3>
+                                <p class="class-description">Entrenamiento avanzado para grupos musculares específicos con técnicas de volumen.</p>
+                                <ul class="class-benefits">
+                                    <li><i class="fas fa-check-circle"></i> Enfoque en grupos musculares</li>
+                                    <li><i class="fas fa-check-circle"></i> Técnicas avanzadas</li>
+                                    <li><i class="fas fa-check-circle"></i> Seguimiento personalizado</li>
+                                </ul>
+                                <a href="#horario-musculacion" class="button primary-button">Ver Horarios</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Clase 6 - CrossFit -->
+                    <article class="class-card" data-category="crossfit">
+                        <div class="class-card-inner">
+                            <div class="class-card-front">
+                                <div class="class-image-container">
+                                    <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Levantamiento Olímpico" class="class-image">
+                                </div>
+                                <div class="class-info">
+                                    <h3 class="class-title">Levantamiento Olímpico</h3>
+                                    <p class="class-instructor">Con Javier Rodríguez</p>
+                                    <div class="class-meta">
+                                        <span class="class-duration"><i class="fas fa-clock"></i> 60 min</span>
+                                        <span class="class-level"><i class="fas fa-signal"></i> Intermedio/Avanzado</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="class-card-back">
+                                <h3 class="class-title">Levantamiento Olímpico</h3>
+                                <p class="class-description">Técnica y práctica de snatch y clean & jerk con énfasis en la ejecución correcta.</p>
+                                <ul class="class-benefits">
+                                    <li><i class="fas fa-check-circle"></i> Mejora de potencia</li>
+                                    <li><i class="fas fa-check-circle"></i> Técnica depurada</li>
+                                    <li><i class="fas fa-check-circle"></i> Fuerza explosiva</li>
+                                </ul>
+                                <a href="#horario-crossfit" class="button primary-button">Ver Horarios</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Clase 7 - Yoga -->
+                    <article class="class-card" data-category="yoga">
+                        <div class="class-card-inner">
+                            <div class="class-card-front">
+                                <div class="class-image-container">
+                                    <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Hatha Yoga" class="class-image">
+                                </div>
+                                <div class="class-info">
+                                    <h3 class="class-title">Hatha Yoga</h3>
+                                    <p class="class-instructor">Con Ana López</p>
+                                    <div class="class-meta">
+                                        <span class="class-duration"><i class="fas fa-clock"></i> 60 min</span>
+                                        <span class="class-level"><i class="fas fa-signal"></i> Principiantes</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="class-card-back">
+                                <h3 class="class-title">Hatha Yoga</h3>
+                                <p class="class-description">Posturas sostenidas y respiración consciente para la relajación profunda y mejora de la flexibilidad.</p>
+                                <ul class="class-benefits">
+                                    <li><i class="fas fa-check-circle"></i> Ideal para principiantes</li>
+                                    <li><i class="fas fa-check-circle"></i> Mejora postural</li>
+                                    <li><i class="fas fa-check-circle"></i> Reducción de estrés</li>
+                                </ul>
+                                <a href="#horario-yoga" class="button primary-button">Ver Horarios</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Clase 8 - Spinning -->
+                    <article class="class-card" data-category="spinning">
+                        <div class="class-card-inner">
+                            <div class="class-card-front">
+                                <div class="class-image-container">
+                                    <img src="https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Interval Training" class="class-image">
+                                </div>
+                                <div class="class-info">
+                                    <h3 class="class-title">Interval Training</h3>
+                                    <p class="class-instructor">Con Laura Méndez</p>
+                                    <div class="class-meta">
+                                        <span class="class-duration"><i class="fas fa-clock"></i> 45 min</span>
+                                        <span class="class-level"><i class="fas fa-signal"></i> Intermedio/Avanzado</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="class-card-back">
+                                <h3 class="class-title">Interval Training</h3>
+                                <p class="class-description">Entrenamiento con intervalos de alta y baja intensidad para maximizar la quema de calorías.</p>
+                                <ul class="class-benefits">
+                                    <li><i class="fas fa-check-circle"></i> Quema calórica prolongada</li>
+                                    <li><i class="fas fa-check-circle"></i> Mejora de resistencia</li>
+                                    <li><i class="fas fa-check-circle"></i> Entrenamiento eficiente</li>
+                                </ul>
+                                <a href="#horario-spinning" class="button primary-button">Ver Horarios</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="classes-schedule section-padding" id="horarios">
+            <div class="container">
+                <h2 class="section-title">Horario Semanal</h2>
+                <div class="schedule-container">
+                    <div class="schedule-nav">
+                        <button class="schedule-nav-button active" data-day="all">Todos</button>
+                        <button class="schedule-nav-button" data-day="lunes">Lunes</button>
+                        <button class="schedule-nav-button" data-day="martes">Martes</button>
+                        <button class="schedule-nav-button" data-day="miercoles">Miércoles</button>
+                        <button class="schedule-nav-button" data-day="jueves">Jueves</button>
+                        <button class="schedule-nav-button" data-day="viernes">Viernes</button>
+                        <button class="schedule-nav-button" data-day="sabado">Sábado</button>
+                    </div>
+                    
+                    <div class="schedule-table-container">
+                        <table class="schedule-table">
+                            <thead>
+                                <tr>
+                                    <th>Hora</th>
+                                    <th>Lunes</th>
+                                    <th>Martes</th>
+                                    <th>Miércoles</th>
+                                    <th>Jueves</th>
+                                    <th>Viernes</th>
+                                    <th>Sábado</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>09:00 - 10:00</td>
+                                    <td data-class="yoga" class="yoga">Yoga</td>
+                                    <td></td>
+                                    <td data-class="yoga" class="yoga">Yoga</td>
+                                    <td></td>
+                                    <td data-class="yoga" class="yoga">Yoga</td>
+                                    <td data-class="spinning" class="spinning">Spinning</td>
+                                </tr>
+                                <tr>
+                                    <td>10:30 - 11:30</td>
+                                    <td data-class="musculacion" class="musculacion">Musculación</td>
+                                    <td data-class="crossfit" class="crossfit">CrossFit</td>
+                                    <td data-class="musculacion" class="musculacion">Musculación</td>
+                                    <td data-class="crossfit" class="crossfit">CrossFit</td>
+                                    <td data-class="musculacion" class="musculacion">Musculación</td>
+                                    <td data-class="yoga" class="yoga">Yoga</td>
+                                </tr>
+                                <tr>
+                                    <td>17:00 - 18:00</td>
+                                    <td data-class="crossfit" class="crossfit">CrossFit</td>
+                                    <td data-class="spinning" class="spinning">Spinning</td>
+                                    <td data-class="crossfit" class="crossfit">CrossFit</td>
+                                    <td data-class="spinning" class="spinning">Spinning</td>
+                                    <td data-class="crossfit" class="crossfit">CrossFit</td>
+                                    <td data-class="musculacion" class="musculacion">Musculación</td>
+                                </tr>
+                                <tr>
+                                    <td>18:30 - 19:30</td>
+                                    <td data-class="spinning" class="spinning">Spinning</td>
+                                    <td data-class="yoga" class="yoga">Yoga</td>
+                                    <td data-class="spinning" class="spinning">Spinning</td>
+                                    <td data-class="yoga" class="yoga">Yoga</td>
+                                    <td data-class="spinning" class="spinning">Spinning</td>
+                                    <td data-class="crossfit" class="crossfit">CrossFit</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer section-padding" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-newsletter">
+                    <h3>Suscríbete a nuestro newsletter</h3>
+                    <form action="#" method="post" aria-labelledby="newsletter-heading">
+                        <h4 id="newsletter-heading" class="visually-hidden">Formulario de newsletter</h4>
+                        <div class="form-group">
+                            <label for="email" class="visually-hidden">Tu correo electrónico</label>
+                            <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+                            <button type="submit" class="button primary-button">Suscribirse</button>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="footer-social">
+                    <h3>Síguenos en redes sociales</h3>
+                    <ul>
+                        <li><a href="https://facebook.com/tribudehierrogym" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                        <li><a href="https://instagram.com/tribudehierrogym" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                        <li><a href="https://tiktok.com/@tribudehierrogym" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><i class="fab fa-tiktok" aria-hidden="true"></i></a></li>
+                        <li><a href="https://twitter.com/tribudehierrogym" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.179337828276!2d-65.3015582855247!3d-24.18633888393978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942e3712dd4915b7%3A0x391d834944108836!2sPlaza%20Belgrano!5e0!3m2!1ses-419!2sar!4v1712278483297!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" title="Ubicación de Tribu de Hierro Gym" aria-label="Mapa de ubicación"></iframe>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>&copy; 2025 Tribu de Hierro Gym. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/clases.js"></script>
+</body>
+</html>

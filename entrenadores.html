@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestros Entrenadores | Tribu de Hierro Gym</title>
+    <link rel="stylesheet" href="css/entrenadores.css">
+    <link rel="stylesheet" href="css/header-footer.css">
+    <link rel="icon" href="/assets/image/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header" role="banner">
+        <div class="container">
+            <nav class="navbar" aria-label="Navegación principal">
+                <div class="logo">
+                    <a href="home.html" aria-current="page">
+                        <div class="logo-image-container">
+                            <img src="assets/image/logo-gym.png" alt="Tribu de Hierro Gym - Logo" class="round-logo">
+                        </div>
+                        <h1>Tribu de Hierro Gym</h1>
+                    </a>
+                </div>
+                
+                <button class="menu-toggle" aria-expanded="false" aria-controls="main-menu" aria-label="Menú principal">
+                    <span class="hamburger"></span>
+                </button>
+                
+                <ul class="nav-links" id="main-menu">
+                    <li><a href="home.html">Inicio</a></li>
+                    <li class="mega-menu">
+                        <button class="mega-menu-button" aria-expanded="false" aria-controls="clases-menu">
+                            Clases <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                            <span class="visually-hidden">Desplegar menú</span>
+                        </button>
+                        <div class="mega-menu-content" id="clases-menu" aria-labelledby="clases-heading">
+                            <h2 id="clases-heading" class="visually-hidden">Submenú de Clases</h2>
+                            <div class="mega-menu-row">
+                                <div class="mega-menu-column">
+                                    <h3>Musculación</h3>
+                                    <ul>
+                                        <li><a href="clases/musculacion-principiantes.html">Principiantes</a></li>
+                                        <li><a href="clases/musculacion-intermedios.html">Intermedios</a></li>
+                                        <li><a href="clases/musculacion-avanzados.html">Avanzados</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h3>Cardio</h3>
+                                    <ul>
+                                        <li><a href="clases/spinning.html">Spinning</a></li>
+                                        <li><a href="clases/zumba.html">Zumba</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h3>Funcional</h3>
+                                    <ul>
+                                        <li><a href="clases/crossfit.html">CrossFit</a></li>
+                                        <li><a href="clases/functional.html">Functional Training</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h3>Bienestar</h3>
+                                    <ul>
+                                        <li><a href="clases/yoga.html">Yoga</a></li>
+                                        <li><a href="clases/pilates.html">Pilates</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="entrenadores.html" aria-current="page">Entrenadores</a></li>
+                    <li><a href="precios.html" target="_blank">Precios</a></li>
+                    <li><a href="blog.html" target="_blank">Blog</a></li>
+                    <li><a href="contacto.html" target="_blank">Contacto</a></li>
+                </ul>
+                
+                <aside class="cta-container">
+                    <a href="registro.html" class="btn-cta">Únete ahora a la Tribu</a>
+                </aside>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="trainers-section section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Nuestros Entrenadores</h2>
+                    <p>Profesionales certificados que te guiarán en tu transformación física</p>
+                </div>
+                
+                <div class="trainers-grid">
+                    <!-- Entrenador 1 -->
+                    <div class="trainer-card" tabindex="0">
+                        <div class="trainer-inner">
+                            <div class="trainer-front">
+                                <div class="trainer-img-container">
+                                    <img src="assets/image/carlos martinez-coach.jpg" alt="Carlos Martínez" class="trainer-img">
+                                </div>
+                                <div class="trainer-info">
+                                    <h3 class="trainer-name">Carlos Martínez</h3>
+                                    <p class="trainer-specialty">Especialista en Fuerza</p>
+                                    <div class="trainer-rating">
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                        <span class="star half">★</span>
+                                        <span class="rating-value">4.5</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="trainer-back">
+                                <h3 class="trainer-name">Carlos Martínez</h3>
+                                <p class="trainer-bio">10 años de experiencia en entrenamiento de fuerza y acondicionamiento físico. Certificado por la NSCA.</p>
+                                
+                                <div class="skills-container">
+                                    <div class="skill">
+                                        <div class="skill-info">
+                                            <span class="skill-name">Fuerza</span>
+                                            <span class="skill-percent">95%</span>
+                                        </div>
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" data-level="95"></div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="skill">
+                                        <div class="skill-info">
+                                            <span class="skill-name">Flexibilidad</span>
+                                            <span class="skill-percent">75%</span>
+                                        </div>
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" data-level="75"></div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="skill">
+                                        <div class="skill-info">
+                                            <span class="skill-name">Nutrición</span>
+                                            <span class="skill-percent">85%</span>
+                                        </div>
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" data-level="85"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="trainer-cta">
+                                    <a href="#contact-carlos" class="button primary-button">Contactar</a>
+                                    <a href="#schedule-carlos" class="button secondary-button">Horarios</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Entrenador 2 -->
+                    <div class="trainer-card" tabindex="0">
+                        <div class="trainer-inner">
+                            <div class="trainer-front">
+                                <div class="trainer-img-container">
+                                    <img src="assets/image/ana lopez-joga.jpg" alt="Ana López" class="trainer-img">
+                                </div>
+                                <div class="trainer-info">
+                                    <h3 class="trainer-name">Ana López</h3>
+                                    <p class="trainer-specialty">Yoga & Flexibilidad</p>
+                                    <div class="trainer-rating">
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                        <span class="rating-value">5.0</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="trainer-back">
+                                <h3 class="trainer-name">Ana López</h3>
+                                <p class="trainer-bio">Instructora certificada de yoga con 8 años de experiencia. Especializada en Vinyasa y Hatha Yoga.</p>
+                                
+                                <div class="skills-container">
+                                    <div class="skill">
+                                        <div class="skill-info">
+                                            <span class="skill-name">Flexibilidad</span>
+                                            <span class="skill-percent">98%</span>
+                                        </div>
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" data-level="98"></div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="skill">
+                                        <div class="skill-info">
+                                            <span class="skill-name">Meditación</span>
+                                            <span class="skill-percent">90%</span>
+                                        </div>
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" data-level="90"></div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="skill">
+                                        <div class="skill-info">
+                                            <span class="skill-name">Fuerza</span>
+                                            <span class="skill-percent">70%</span>
+                                        </div>
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" data-level="70"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="trainer-cta">
+                                    <a href="#contact-ana" class="button primary-button">Contactar</a>
+                                    <a href="#schedule-ana" class="button secondary-button">Horarios</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Entrenador 3 -->
+                    <div class="trainer-card" tabindex="0">
+                        <div class="trainer-inner">
+                            <div class="trainer-front">
+                                <div class="trainer-img-container">
+                                    <img src="assets/image/javier-rodriguez-crossfit.jpg" alt="Javier Rodríguez" class="trainer-img">
+                                </div>
+                                <div class="trainer-info">
+                                    <h3 class="trainer-name">Javier Rodríguez</h3>
+                                    <p class="trainer-specialty">CrossFit & HIIT</p>
+                                    <div class="trainer-rating">
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                        <span class="star">★</span>
+                                        <span class="rating-value">4.0</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="trainer-back">
+                                <h3 class="trainer-name">Javier Rodríguez</h3>
+                                <p class="trainer-bio">Entrenador de CrossFit Level 3 con 6 años de experiencia. Especializado en entrenamientos funcionales de alta intensidad.</p>
+                                
+                                <div class="skills-container">
+                                    <div class="skill">
+                                        <div class="skill-info">
+                                            <span class="skill-name">Resistencia</span>
+                                            <span class="skill-percent">92%</span>
+                                        </div>
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" data-level="92"></div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="skill">
+                                        <div class="skill-info">
+                                            <span class="skill-name">Técnica</span>
+                                            <span class="skill-percent">88%</span>
+                                        </div>
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" data-level="88"></div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="skill">
+                                        <div class="skill-info">
+                                            <span class="skill-name">Motivación</span>
+                                            <span class="skill-percent">95%</span>
+                                        </div>
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" data-level="95"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="trainer-cta">
+                                    <a href="#contact-javier" class="button primary-button">Contactar</a>
+                                    <a href="#schedule-javier" class="button secondary-button">Horarios</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Entrenador 4 -->
+                    <div class="trainer-card" tabindex="0">
+                        <div class="trainer-inner">
+                            <div class="trainer-front">
+                                <div class="trainer-img-container">
+                                    <img src="assets/image/maria-gonzales-pilates.jpg" alt="María González" class="trainer-img">
+                                </div>
+                                <div class="trainer-info">
+                                    <h3 class="trainer-name">María González</h3>
+                                    <p class="trainer-specialty">Pilates & Rehabilitación</p>
+                                    <div class="trainer-rating">
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                        <span class="star half">★</span>
+                                        <span class="rating-value">4.7</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="trainer-back">
+                                <h3 class="trainer-name">María González</h3>
+                                <p class="trainer-bio">Fisioterapeuta y entrenadora de Pilates con 7 años de experiencia. Especializada en rehabilitación y prevención de lesiones.</p>
+                                
+                                <div class="skills-container">
+                                    <div class="skill">
+                                        <div class="skill-info">
+                                            <span class="skill-name">Rehabilitación</span>
+                                            <span class="skill-percent">97%</span>
+                                        </div>
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" data-level="97"></div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="skill">
+                                        <div class="skill-info">
+                                            <span class="skill-name">Pilates</span>
+                                            <span class="skill-percent">93%</span>
+                                        </div>
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" data-level="93"></div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="skill">
+                                        <div class="skill-info">
+                                            <span class="skill-name">Anatomía</span>
+                                            <span class="skill-percent">90%</span>
+                                        </div>
+                                        <div class="skill-bar">
+                                            <div class="skill-progress" data-level="90"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="trainer-cta">
+                                    <a href="#contact-maria" class="button primary-button">Contactar</a>
+                                    <a href="#schedule-maria" class="button secondary-button">Horarios</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Entrenador 2 - Manuel Luna -->
+<div class="trainer-card" tabindex="0">
+    <div class="trainer-inner">
+        <div class="trainer-front">
+            <div class="trainer-img-container">
+                <img src="assets/image/manuelluna-functional.webp" alt="Manuel Luna" class="trainer-img">
+            </div>
+            <div class="trainer-info">
+                <h3 class="trainer-name">Manuel Luna</h3>
+                <p class="trainer-specialty">Especialista en Functional Training</p>
+                <div class="trainer-rating">
+                    <span class="star filled">★</span>
+                    <span class="star filled">★</span>
+                    <span class="star filled">★</span>
+                    <span class="star filled">★</span>
+                    <span class="star">★</span>
+                    <span class="rating-value">4.0</span>
+                </div>
+            </div>
+        </div>
+        <div class="trainer-back">
+            <h3 class="trainer-name">Manuel Luna</h3>
+            <p class="trainer-bio">8 años de experiencia en entrenamiento funcional y movilidad. Certificado por ACE.</p>
+            
+            <div class="skills-container">
+                <div class="skill">
+                    <div class="skill-info">
+                        <span class="skill-name">Entrenamiento Funcional</span>
+                        <span class="skill-percent">90%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-level="90"></div>
+                    </div>
+                </div>
+                
+                <div class="skill">
+                    <div class="skill-info">
+                        <span class="skill-name">Movilidad</span>
+                        <span class="skill-percent">85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-level="85"></div>
+                    </div>
+                </div>
+                
+                <div class="skill">
+                    <div class="skill-info">
+                        <span class="skill-name">Core Training</span>
+                        <span class="skill-percent">88%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-level="88"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="trainer-cta">
+                <a href="#contact-manuel" class="button primary-button">Contactar</a>
+                <a href="#schedule-manuel" class="button secondary-button">Horarios</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Entrenador 3 - Ricardo Ramos -->
+<div class="trainer-card" tabindex="0">
+    <div class="trainer-inner">
+        <div class="trainer-front">
+            <div class="trainer-img-container">
+                <img src="assets/image/ricardoramos-spinning.png" alt="Ricardo Ramos" class="trainer-img">
+            </div>
+            <div class="trainer-info">
+                <h3 class="trainer-name">Ricardo Ramos</h3>
+                <p class="trainer-specialty">Especialista en Spinning</p>
+                <div class="trainer-rating">
+                    <span class="star filled">★</span>
+                    <span class="star filled">★</span>
+                    <span class="star filled">★</span>
+                    <span class="star filled">★</span>
+                    <span class="star filled">★</span>
+                    <span class="rating-value">5.0</span>
+                </div>
+            </div>
+        </div>
+        <div class="trainer-back">
+            <h3 class="trainer-name">Ricardo Ramos</h3>
+            <p class="trainer-bio">12 años de experiencia en ciclismo indoor y entrenamiento cardiovascular. Certificado por Schwinn.</p>
+            
+            <div class="skills-container">
+                <div class="skill">
+                    <div class="skill-info">
+                        <span class="skill-name">Spinning</span>
+                        <span class="skill-percent">98%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-level="98"></div>
+                    </div>
+                </div>
+                
+                <div class="skill">
+                    <div class="skill-info">
+                        <span class="skill-name">Resistencia</span>
+                        <span class="skill-percent">92%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-level="92"></div>
+                    </div>
+                </div>
+                
+                <div class="skill">
+                    <div class="skill-info">
+                        <span class="skill-name">Motivación</span>
+                        <span class="skill-percent">95%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-level="95"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="trainer-cta">
+                <a href="#contact-ricardo" class="button primary-button">Contactar</a>
+                <a href="#schedule-ricardo" class="button secondary-button">Horarios</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Entrenador 4 - Javier Rodríguez -->
+<div class="trainer-card" tabindex="0">
+    <div class="trainer-inner">
+        <div class="trainer-front">
+            <div class="trainer-img-container">
+                <img src="assets/image/MatiasRolon-zumba.jpg" alt="Matias Rolon" class="trainer-img">
+            </div>
+            <div class="trainer-info">
+                <h3 class="trainer-name">Matias Rolon</h3>
+                <p class="trainer-specialty">Especialista en Zumba</p>
+                <div class="trainer-rating">
+                    <span class="star filled">★</span>
+                    <span class="star filled">★</span>
+                    <span class="star filled">★</span>
+                    <span class="star filled">★</span>
+                    <span class="star half">★</span>
+                    <span class="rating-value">4.7</span>
+                </div>
+            </div>
+        </div>
+        <div class="trainer-back">
+            <h3 class="trainer-name">Matias Rolon</h3>
+            <p class="trainer-bio">5 años de experiencia en Zumba y baile fitness. Instructor certificado por Zumba®.</p>
+            
+            <div class="skills-container">
+                <div class="skill">
+                    <div class="skill-info">
+                        <span class="skill-name">Zumba</span>
+                        <span class="skill-percent">97%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-level="97"></div>
+                    </div>
+                </div>
+                
+                <div class="skill">
+                    <div class="skill-info">
+                        <span class="skill-name">Ritmo</span>
+                        <span class="skill-percent">90%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-level="90"></div>
+                    </div>
+                </div>
+                
+                <div class="skill">
+                    <div class="skill-info">
+                        <span class="skill-name">Energía</span>
+                        <span class="skill-percent">99%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-level="99"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="trainer-cta">
+                <a href="#contact-javier" class="button primary-button">Contactar</a>
+                <a href="#schedule-javier" class="button secondary-button">Horarios</a>
+            </div>
+        </div>
+    </div>
+</div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="stats-section section-padding">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number" id="years-exp">0</div>
+                        <div class="stat-label">Años de experiencia combinada</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" id="clients-trained">0</div>
+                        <div class="stat-label">Clientes entrenados</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" id="certifications">0</div>
+                        <div class="stat-label">Certificaciones</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer section-padding" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-newsletter">
+                    <h3>Suscríbete a nuestro newsletter</h3>
+                    <form action="#" method="post" aria-labelledby="newsletter-heading">
+                        <h4 id="newsletter-heading" class="visually-hidden">Formulario de newsletter</h4>
+                        <div class="form-group">
+                            <label for="email" class="visually-hidden">Tu correo electrónico</label>
+                            <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+                            <button type="submit" class="button primary-button">Suscribirse</button>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="footer-social">
+                    <h3>Síguenos en redes sociales</h3>
+                    <ul>
+                        <li><a href="https://facebook.com/tribudehierrogym" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                        <li><a href="https://instagram.com/tribudehierrogym" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                        <li><a href="https://tiktok.com/@tribudehierrogym" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><i class="fab fa-tiktok" aria-hidden="true"></i></a></li>
+                        <li><a href="https://twitter.com/tribudehierrogym" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.179337828276!2d-65.3015582855247!3d-24.18633888393978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942e3712dd4915b7%3A0x391d834944108836!2sPlaza%20Belgrano!5e0!3m2!1ses-419!2sar!4v1712278483297!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" title="Ubicación de Tribu de Hierro Gym" aria-label="Mapa de ubicación"></iframe>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>&copy; 2025 Tribu de Hierro Gym. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/entrenadores.js"></script>
+</body>
+</html>

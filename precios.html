@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribu de Hierro Gym - Planes y Precios</title>
+    <link rel="stylesheet" href="css/precios.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" role="banner">
+        <div class="container">
+            <nav class="navbar" aria-label="Navegación principal">
+                <div class="logo">
+                    <a href="home.html" aria-current="page">
+                        <div class="logo-image-container">
+                            <img src="assets/image/logo-gym.png" alt="Tribu de Hierro Gym - Logo" class="round-logo">
+                        </div>
+                        <h1>Tribu de Hierro Gym</h1>
+                    </a>
+                </div>
+                
+                <button class="menu-toggle" aria-expanded="false" aria-controls="main-menu" aria-label="Menú principal">
+                    <span class="hamburger"></span>
+                </button>
+                
+                <ul class="nav-links" id="main-menu">
+                    <li><a href="home.html">Inicio</a></li>
+                    <li class="mega-menu">
+                        <button class="mega-menu-button" aria-expanded="false" aria-controls="clases-menu">
+                            Clases <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                            <span class="visually-hidden">Desplegar menú</span>
+                        </button>
+                        <div class="mega-menu-content" id="clases-menu" aria-labelledby="clases-heading">
+                            <h2 id="clases-heading" class="visually-hidden">Submenú de Clases</h2>
+                            <div class="mega-menu-row">
+                                <div class="mega-menu-column">
+                                    <h3>Musculación</h3>
+                                    <ul>
+                                        <li><a href="clases/musculacion-principiantes.html">Principiantes</a></li>
+                                        <li><a href="clases/musculacion-intermedios.html">Intermedios</a></li>
+                                        <li><a href="clases/musculacion-avanzados.html">Avanzados</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h3>Cardio</h3>
+                                    <ul>
+                                        <li><a href="clases/spinning.html">Spinning</a></li>
+                                        <li><a href="clases/zumba.html">Zumba</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h3>Funcional</h3>
+                                    <ul>
+                                        <li><a href="clases/crossfit.html">CrossFit</a></li>
+                                        <li><a href="clases/functional.html">Functional Training</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h3>Bienestar</h3>
+                                    <ul>
+                                        <li><a href="clases/yoga.html">Yoga</a></li>
+                                        <li><a href="clases/pilates.html">Pilates</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="entrenadores.html">Entrenadores</a></li>
+                    <li><a href="precios.html" class="active">Precios</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+                
+                <aside class="cta-container">
+                    <a href="registro.html" class="btn-cta">Únete ahora a la Tribu</a>
+                </aside>
+            </nav>
+        </div>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar tema">
+            <i class="fas fa-moon"></i>
+        </button>
+    </header>
+    
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="pricing-hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Planes que se adaptan a tus metas</h1>
+                    <p>Elige el plan perfecto para tu viaje fitness y únete a nuestra tribu</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section class="pricing-section">
+            <div class="container">
+                <h2>Elige tu plan de entrenamiento</h2>
+                <p class="section-subtitle">Todos los planes incluyen acceso a nuestra comunidad y seguimiento básico</p>
+                
+                <div class="toggle-container">
+                    <span>Mensual</span>
+                    <label class="switch">
+                        <input type="checkbox" id="plan-toggle">
+                        <span class="slider round"></span>
+                    </label>
+                    <span>Anual <span class="discount-badge">(20% de descuento)</span></span>
+                </div>
+
+                <div class="pricing-table">
+                    <!-- Plan Bronce -->
+                    <div class="pricing-card">
+                        <div class="card-header">
+                            <h3>Plan Bronce</h3>
+                            <div class="price monthly">$1,500<span>/mes</span></div>
+                            <div class="price annually">$1,200<span>/mes</span></div>
+                            <p class="billed-annually">Facturado anualmente ($14,400)</p>
+                        </div>
+                        <ul class="features">
+                            <li>
+                                <i class="fas fa-check"></i> Acceso a zona de pesas
+                                <span class="tooltip">Incluye máquinas de pesas y barras libres</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check"></i> Horario estándar
+                                <span class="tooltip">De 6:00 am a 10:00 pm</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check"></i> 1 clase grupal por semana
+                                <span class="tooltip">Elige entre spinning, zumba o funcional</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check"></i> Lockers básicos
+                                <span class="tooltip">Uso diario, trae tu propio candado</span>
+                            </li>
+                        </ul>
+                        <button class="cta-button">Únete ahora</button>
+                    </div>
+
+                    <!-- Plan Plata (Popular) -->
+                    <div class="pricing-card popular">
+                        <div class="popular-badge">MÁS POPULAR</div>
+                        <div class="card-header">
+                            <h3>Plan Plata</h3>
+                            <div class="price monthly">$2,200<span>/mes</span></div>
+                            <div class="price annually">$1,760<span>/mes</span></div>
+                            <p class="billed-annually">Facturado anualmente ($21,120)</p>
+                        </div>
+                        <ul class="features">
+                            <li>
+                                <i class="fas fa-check"></i> Todo en Plan Bronce
+                            </li>
+                            <li>
+                                <i class="fas fa-check"></i> Acceso ilimitado a clases grupales
+                                <span class="tooltip">Incluye todas nuestras clases: spinning, zumba, funcional, yoga</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check"></i> Horario extendido
+                                <span class="tooltip">De 5:00 am a 11:00 pm</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check"></i> 1 sesión con entrenador al mes
+                                <span class="tooltip">Evaluación y plan personalizado</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check"></i> Lockers premium
+                                <span class="tooltip">Con cerradura digital incluida</span>
+                            </li>
+                        </ul>
+                        <button class="cta-button">Únete ahora</button>
+                    </div>
+
+                    <!-- Plan Oro -->
+                    <div class="pricing-card">
+                        <div class="card-header">
+                            <h3>Plan Oro</h3>
+                            <div class="price monthly">$3,500<span>/mes</span></div>
+                            <div class="price annually">$2,800<span>/mes</span></div>
+                            <p class="billed-annually">Facturado anualmente ($33,600)</p>
+                        </div>
+                        <ul class="features">
+                            <li>
+                                <i class="fas fa-check"></i> Todo en Plan Plata
+                            </li>
+                            <li>
+                                <i class="fas fa-check"></i> Acceso 24/7
+                                <span class="tooltip">Acceso en cualquier momento con tarjeta RFID</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check"></i> 4 sesiones con entrenador al mes
+                                <span class="tooltip">Seguimiento personalizado semanal</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check"></i> Área VIP
+                                <span class="tooltip">Zona exclusiva con equipos premium</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check"></i> Sauna y jacuzzi
+                                <span class="tooltip">Acceso ilimitado a zona de relajación</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check"></i> Toalla y kit de bienvenida
+                                <span class="tooltip">Incluye toalla, botella y mochila</span>
+                            </li>
+                        </ul>
+                        <button class="cta-button">Únete ahora</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits Section -->
+        <section class="benefits-section">
+            <div class="container">
+                <h2>Beneficios exclusivos</h2>
+                <p class="section-subtitle">Todos nuestros miembros disfrutan de estos beneficios</p>
+                
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-dumbbell"></i>
+                        </div>
+                        <h3>Equipo de primera</h3>
+                        <p>Máquinas de última generación y pesas libres de alta calidad para todos los niveles.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Comunidad activa</h3>
+                        <p>Únete a nuestra tribu y participa en eventos, desafíos y competencias amistosas.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Resultados garantizados</h3>
+                        <p>Seguimiento de progreso con tecnología de punta y asesoramiento profesional.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <h3>Enfoque integral</h3>
+                        <p>No solo ejercicio, también nutrición, descanso y bienestar mental.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials-section">
+            <div class="container">
+                <h2>Lo que dice nuestra tribu</h2>
+                <p class="section-subtitle">Experiencias reales de nuestros miembros</p>
+                
+                <div class="testimonials-container">
+                    <div class="testimonial">
+                        <div class="testimonial-image">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Carlos M." class="clipped-image">
+                        </div>
+                        <div class="testimonial-content">
+                            <p>"En 6 meses transformé mi cuerpo y mi salud. Los entrenadores son expertos y la comunidad es muy motivadora."</p>
+                            <h4>Carlos M.</h4>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="member-since">Miembro desde 2022</span>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <div class="testimonial-image">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Ana L." class="clipped-image">
+                        </div>
+                        <div class="testimonial-content">
+                            <p>"El mejor gimnasio al que he ido. El área VIP vale cada peso y nunca está abarrotado como otros gimnasios."</p>
+                            <h4>Ana L.</h4>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="member-since">Miembro desde 2021</span>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <div class="testimonial-image">
+                            <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Roberto G." class="clipped-image">
+                        </div>
+                        <div class="testimonial-content">
+                            <p>"Me encanta la variedad de clases y el ambiente. He logrado metas que nunca creí posibles."</p>
+                            <h4>Roberto G.</h4>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="member-since">Miembro desde 2020</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <h2>¿Listo para unirte a la Tribu de Hierro?</h2>
+                <p>Regístrate hoy mismo y obtén una sesión de evaluación gratuita</p>
+                <a href="registro.html" class="btn-cta-large">Empieza tu viaje ahora</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <img src="assets/image/logo-gym.png" alt="Tribu de Hierro Logo" width="80">
+                        <h3>Tribu de Hierro</h3>
+                    </div>
+                    <p>Transformando cuerpos y mentes desde 2010. Únete a nuestra tribu y alcanza tus metas fitness.</p>
+                    <div class="footer-payment">
+                        <i class="fab fa-cc-visa"></i>
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fab fa-cc-amex"></i>
+                        <i class="fab fa-cc-paypal"></i>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Enlaces rápidos</h3>
+                    <ul>
+                        <li><a href="home.html">Inicio</a></li>
+                        <li><a href="clases.html">Clases</a></li>
+                        <li><a href="entrenadores.html">Entrenadores</a></li>
+                        <li><a href="precios.html">Precios</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>Contacto</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Av. Siempre Viva 123, Springfield</li>
+                        <li><i class="fas fa-phone"></i> +54 11 1234-5678</li>
+                        <li><i class="fas fa-envelope"></i> info@tribudehierro.com</li>
+                        <li><i class="fas fa-clock"></i> Lun-Vie: 6:00 - 22:00 | Sáb: 8:00 - 20:00</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-social">
+                    <h3>Síguenos</h3>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                    <div class="footer-newsletter">
+                        <h4>Newsletter</h4>
+                        <p>Suscríbete para recibir consejos y promociones</p>
+                        <form>
+                            <input type="email" placeholder="Tu correo" required>
+                            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Tribu de Hierro Gym. Todos los derechos reservados.</p>
+                <div class="legal-links">
+                    <a href="#">Términos y condiciones</a>
+                    <a href="#">Política de privacidad</a>
+                    <a href="#">Aviso legal</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/precio.js"></script>
+</body>
+</html>

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Tribu de Hierro Gym">
+        <meta name="language" content="spanish">
+        <meta http-equiv="content-language" content="es-AR">
+        <meta name="description" content="Tribu de Hierro Gym - Transforma tu cuerpo con entrenamientos personalizados, clases grupales y entrenadores certificados en Jujuy">
+        <meta name="robots" content="index, follow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:title" content="Tribu de Hierro Gym - Alcanza tu máximo potencial">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="https://tribudehierrogym.com.ar/assets/image/logo-gym.png">
+        <meta property="og:url" content="https://tribudehierrogym.com.ar">
+        <meta property="og:description" content="Gimnasio líder en Jujuy con instalaciones modernas y programas de entrenamiento personalizado para todos los niveles">
+        <meta property="og:locale" content="es_AR">
+        <meta property="og:site_name" content="Tribu de Hierro Gym">
+        <meta name="keywords" content="gimnasio, entrenamiento, fitness, musculación, crossfit, yoga, Jujuy, Alto Comedero">
+        <link rel="icon" href="/assets/image/favicon.ico">
+        <title>Tribu de Hierro Gym - Alcanza tu máximo potencial</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/header-footer.css">
+    </head>
+<body>
+    <!-- Header con Mega-Menu -->
+    <header class="header" role="banner">
+        <div class="container">
+            <nav class="navbar" aria-label="Navegación principal">
+                <div class="logo">
+                    <a href="home.html" aria-current="page">
+                        <div class="logo-image-container">
+                            <img src="assets/image/logo-gym.png" alt="Tribu de Hierro Gym - Logo" class="round-logo">
+                        </div>
+                        
+                        <h1>Tribu de Hierro Gym</h1>
+                    </a>
+                </div>
+                
+                <button class="menu-toggle" aria-expanded="false" aria-controls="main-menu" aria-label="Menú principal">
+                    <span class="hamburger"></span>
+                </button>
+                
+                <ul class="nav-links" id="main-menu">
+                    <li><a href="home.html" aria-current="page">Inicio</a></li>
+                    <li class="mega-menu">
+                        <button class="mega-menu-button" aria-expanded="false" aria-controls="clases-menu">
+                            Clases <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                            <span class="visually-hidden">Desplegar menú</span>
+                        </button>
+                        <div class="mega-menu-content" id="clases-menu" aria-labelledby="clases-heading">
+                            <h2 id="clases-heading" class="visually-hidden">Submenú de Clases</h2>
+                            <div class="mega-menu-row">
+                                <div class="mega-menu-column">
+                                    <h3>Musculación</h3>
+                                    <ul>
+                                        <li><a href="clases/principiantes.html" target="_blank">Principiantes</a></li>
+                                        <li><a href="clases/intermedios.html"target="_blank" >Intermedios</a></li>
+                                        <li><a href="clases/avanzados.html" target="_blank">Avanzados</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h3>Cardio</h3>
+                                    <ul>
+                                        <li><a href="clases/spinning.html" target="_blank">Spinning</a></li>
+                                        <li><a href="clases/zumba.html" target="_blank">Zumba</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h3>Funcional</h3>
+                                    <ul>
+                                        <li><a href="clases/crossfit.html" target="_blank">CrossFit</a></li>
+                                        <li><a href="clases/functional.html" target="_blank">Functional Training</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h3>Bienestar</h3>
+                                    <ul>
+                                        <li><a href="clases/yoga.html" target="_blank">Yoga</a></li>
+                                        <li><a href="clases/pilates.html" target="_blank">Pilates</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="entrenadores.html" target="_blank">Entrenadores</a></li>
+                    <li><a href="precios.html" target="_blank">Precios</a></li>
+                    <li><a href="blog.html" target="_blank">Blog</a></li>
+                    <li><a href="contacto.html" target="_blank">Contacto</a></li>
+                </ul>
+                
+                <aside class="cta-container">
+                    <a href="registro.html" class="btn-cta" target="_blank">Únete ahora a la Tribu</a>
+                </aside>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero con video de fondo -->
+    <section class="hero" aria-labelledby="hero-heading">
+        <div class="video-background">
+            <video autoplay muted loop playsinline class="hero-video" aria-hidden="true">
+                <source src="assets/videos/tribu-gym.mp4" type="video/mp4">
+                Tu navegador no soporta video.
+            </video>
+        </div>
+        <div class="hero-overlay">
+            <div class="container">
+                <h1 id="hero-heading" class="hero-title animate-fade-in">¡Alcanza tu máximo potencial!</h1>
+                <p class="hero-subtitle animate-slide-up">Entrenamiento personalizado y clases grupales para todos los niveles.</p>
+                <div class="hero-buttons">
+                    <a href="registro.html" class="button primary-button animate-pulse" target="_blank">Únete ahora</a>
+                    <a href="clases.html" class="button secondary-button" target="_blank">Ver clases</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main id="main-content">
+        <!-- Clases Destacadas -->
+        <section class="featured-classes section-padding" aria-labelledby="featured-classes-heading">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="featured-classes-heading">Clases Destacadas</h2>
+                    <p>Descubre nuestras clases más populares</p>
+                </header>
+                
+                <div class="classes-grid">
+                    <article class="class-card">
+                        <div class="class-card-inner">
+                            <div class="class-card-front">
+                                <img src="assets/image/musculacion.webp" alt="Personas levantando pesas en sala de musculación" loading="lazy">
+                                <h3>Musculación</h3>
+                            </div>
+                            <div class="class-card-back">
+                                <h3>Musculación</h3>
+                                <p>Desarrolla fuerza y masa muscular con nuestros entrenamientos especializados.</p>
+                                <ul class="class-details">
+                                    <li><i class="fas fa-clock" aria-hidden="true"></i> 60 minutos</li>
+                                    <li><i class="fas fa-dumbbell" aria-hidden="true"></i> Todos los niveles</li>
+                                </ul>
+                                <a href="clases/musculacion.html" class="button secondary-button">Ver más</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="class-card">
+                        <div class="class-card-inner">
+                            <div class="class-card-front">
+                                <img src="assets/image/crossfit.jpg" alt="Grupo realizando ejercicios de CrossFit" loading="lazy">
+                                <h3>CrossFit</h3>
+                            </div>
+                            <div class="class-card-back">
+                                <h3>CrossFit</h3>
+                                <p>Entrenamiento de alta intensidad que combina fuerza, resistencia y agilidad.</p>
+                                <ul class="class-details">
+                                    <li><i class="fas fa-clock" aria-hidden="true"></i> 45 minutos</li>
+                                    <li><i class="fas fa-fire" aria-hidden="true"></i> Alta intensidad</li>
+                                </ul>
+                                <a href="clases/crossfit.html" class="button secondary-button">Ver más</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="class-card">
+                        <div class="class-card-inner">
+                            <div class="class-card-front">
+                                <img src="assets/image/joga.webp" alt="Personas practicando yoga en esterillas" loading="lazy">
+                                <h3>Yoga</h3>
+                            </div>
+                            <div class="class-card-back">
+                                <h3>Yoga</h3>
+                                <p>Mejora tu flexibilidad, equilibrio y bienestar mental.</p>
+                                <ul class="class-details">
+                                    <li><i class="fas fa-clock" aria-hidden="true"></i> 60 minutos</li>
+                                    <li><i class="fas fa-spa" aria-hidden="true"></i> Relajación</li>
+                                </ul>
+                                <a href="clases/yoga.html" class="button secondary-button">Ver más</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                
+                <div class="section-footer">
+                    <a href="clases.html" class="button primary-button">Ver todas las clases</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contador animado -->
+        <section class="stats section-padding" aria-labelledby="stats-heading">
+            <div class="container">
+                <h2 id="stats-heading" class="visually-hidden">Nuestros logros</h2>
+                <div class="stats-grid">
+                    <div class="stat-counter">
+                        <span class="counter" data-target="500">100</span>+
+                        <p>Socios Satisfechos</p>
+                    </div>
+                    <div class="stat-counter">
+                        <span class="counter" data-target="20">25</span>+
+                        <p>Entrenadores Certificados</p>
+                    </div>
+                    <div class="stat-counter">
+                        <span class="counter" data-target="15">15</span>+
+                        <p>Clases Diferentes</p>
+                    </div>
+                    <div class="stat-counter">
+                        <span class="counter" data-target="10">10</span>+
+                        <p>Años de Experiencia</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonios en carrusel CSS -->
+        <section class="testimonials section-padding" aria-labelledby="testimonials-heading">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="testimonials-heading">Testimonios</h2>
+                    <p>Lo que dicen nuestros miembros</p>
+                </header>
+                
+                <div class="testimonials-carousel">
+                    <input type="radio" name="slider" id="slide-1" checked>
+                    <input type="radio" name="slider" id="slide-2">
+                    <input type="radio" name="slider" id="slide-3">
+                    
+                    <div class="testimonial-slides">
+                        <blockquote class="testimonial-slide" id="testimonial-1">
+                            <div class="testimonial-content">
+                                <p>"Desde que me uní a Tribu de Hierro Gym, he notado una gran diferencia en mi energía y fuerza. ¡Los entrenadores son excelentes!"</p>
+                                <div class="testimonial-author">
+                                    <img src="assets/media/testimonial-ana.jpg" alt="Ana Pérez" loading="lazy">
+                                    <cite>- Ana Chambi <span class="author-role">Miembro desde 2023</span></cite>
+                                </div>
+                            </div>
+                        </blockquote>
+                        
+                        <blockquote class="testimonial-slide" id="testimonial-2">
+                            <div class="testimonial-content">
+                                <p>"Las clases son variadas y motivadoras. El ambiente es genial y siempre me siento con ganas de volver."</p>
+                                <div class="testimonial-author">
+                                    <img src="assets/media/testimonial-carlos.jpg" alt="Carlos López" loading="lazy">
+                                    <cite>- Carlos Torres <span class="author-role">Miembro desde 2022</span></cite>
+                                </div>
+                            </div>
+                        </blockquote>
+                        
+                        <blockquote class="testimonial-slide" id="testimonial-3">
+                            <div class="testimonial-content">
+                                <p>"He probado varios gimnasios y este es sin duda el mejor. La atención personalizada hace toda la diferencia."</p>
+                                <div class="testimonial-author">
+                                    <img src="assets/media/testimonial-maria.jpg" alt="María González" loading="lazy">
+                                    <cite>- María Tolaba <span class="author-role">Miembro desde 2021</span></cite>
+                                </div>
+                            </div>
+                        </blockquote>
+                    </div>
+                    
+                    <div class="testimonial-dots">
+                        <label for="slide-1" id="dot-1"></label>
+                        <label for="slide-2" id="dot-2"></label>
+                        <label for="slide-3" id="dot-3"></label>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer section-padding" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-newsletter">
+                    <h3>Suscríbete a nuestro newsletter</h3>
+                    <form action="#" method="post" aria-labelledby="newsletter-heading">
+                        <h4 id="newsletter-heading" class="visually-hidden">Formulario de newsletter</h4>
+                        <div class="form-group">
+                            <label for="email" class="visually-hidden">Tu correo electrónico</label>
+                            <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+                            <button type="submit" class="button primary-button">Suscribirse</button>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="footer-social">
+                    <h3>Síguenos en redes sociales</h3>
+                    <ul>
+                        <li><a href="https://facebook.com/tribudehierrogym" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                        <li><a href="https://instagram.com/tribudehierrogym" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                        <li><a href="https://tiktok.com/@tribudehierrogym" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><i class="fab fa-tiktok" aria-hidden="true"></i></a></li>
+                        <li><a href="https://twitter.com/tribudehierrogym" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.179337828276!2d-65.3015582855247!3d-24.18633888393978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942e3712dd4915b7%3A0x391d834944108836!2sPlaza%20Belgrano!5e0!3m2!1ses-419!2sar!4v1712278483297!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" title="Ubicación de Tribu de Hierro Gym" aria-label="Mapa de ubicación"></iframe>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>&copy; 2025 Tribu de Hierro Gym. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

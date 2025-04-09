@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog de Fitness - Tribu de Hierro Gym</title>
+    <link rel="icon" href="/assets/image/favicon.ico">
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <h1>Tribu de Hierro <span>Blog de Fitness</span></h1>
+                <button id="theme-toggle" class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="home.html" class="nav-link"><i class="fas fa-home"></i> Inicio</a></li>
+                    <li><a href="#entrenamiento" class="nav-link"><i class="fas fa-dumbbell"></i> Entrenamiento</a></li>
+                    <li><a href="#nutricion" class="nav-link"><i class="fas fa-utensils"></i> Nutrición</a></li>
+                    <li><a href="#motivacion" class="nav-link"><i class="fas fa-fire"></i> Motivación</a></li>
+                    <li><a href="contacto.html" class="nav-link"><i class="fas fa-envelope"></i> Contacto</a></li>
+                </ul>
+                
+                <div class="search-container">
+                    <input type="text" placeholder="Buscar artículos..." class="search-input">
+                    <button class="search-button"><i class="fas fa-search"></i></button>
+                </div>
+                
+                <button class="mobile-menu-button">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="featured-section">
+            <div class="container">
+                <h2 class="section-title">Artículo Destacado</h2>
+                <article class="featured-post" data-category="entrenamiento">
+                    <div class="featured-image">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Entrenamiento de fuerza">
+                        <div class="category-badge">Entrenamiento</div>
+                    </div>
+                    <div class="featured-content">
+                        <h2 class="post-title">Rutinas para ganar masa muscular</h2>
+                        <p class="post-excerpt">Descubre las mejores rutinas para desarrollar músculo de forma eficiente con métodos basados en ciencia y experiencia de nuestros entrenadores.</p>
+                        <div class="post-meta">
+                            <span class="author"><i class="fas fa-user"></i> Coach Carlos</span>
+                            <span class="date"><i class="fas fa-calendar-alt"></i> 15 Mayo 2023</span>
+                            <span class="reading-time"><i class="fas fa-clock"></i> 5 min lectura</span>
+                        </div>
+                        <a href="#" class="read-more">Leer más <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="blog-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Últimos Artículos</h2>
+                    <div class="category-filters">
+                        <button class="filter-button active" data-filter="all">Todos</button>
+                        <button class="filter-button" data-filter="entrenamiento">Entrenamiento</button>
+                        <button class="filter-button" data-filter="nutricion">Nutrición</button>
+                        <button class="filter-button" data-filter="motivacion">Motivación</button>
+                    </div>
+                </div>
+                
+                <div class="articles-grid">
+                    <article class="post-card" data-category="nutricion">
+                        <div class="post-image">
+                            <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Alimentos saludables">
+                            <div class="category-badge">Nutrición</div>
+                        </div>
+                        <div class="post-content">
+                            <h3 class="post-title">Los mejores alimentos para después del entrenamiento</h3>
+                            <p class="post-excerpt">Aprende qué comer después del gym para mejorar tu recuperación y maximizar tus ganancias musculares.</p>
+                            <div class="post-meta">
+                                <span class="author"><i class="fas fa-user"></i> Nutrióloga Ana</span>
+                                <span class="date"><i class="fas fa-calendar-alt"></i> 10 Mayo 2023</span>
+                            </div>
+                            <a href="#" class="read-more">Leer más <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="post-card" data-category="motivacion">
+                        <div class="post-image">
+                            <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Mujer entrenando">
+                            <div class="category-badge">Motivación</div>
+                        </div>
+                        <div class="post-content">
+                            <h3 class="post-title">Cómo mantener la disciplina en el gimnasio</h3>
+                            <p class="post-excerpt">Estrategias comprobadas para crear hábitos duraderos y no abandonar tus metas fitness.</p>
+                            <div class="post-meta">
+                                <span class="author"><i class="fas fa-user"></i> Psicóloga Laura</span>
+                                <span class="date"><i class="fas fa-calendar-alt"></i> 5 Mayo 2023</span>
+                            </div>
+                            <a href="#" class="read-more">Leer más <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="post-card" data-category="entrenamiento">
+                        <div class="post-image">
+                            <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Entrenamiento funcional">
+                            <div class="category-badge">Entrenamiento</div>
+                        </div>
+                        <div class="post-content">
+                            <h3 class="post-title">Entrenamiento funcional: Beneficios y ejercicios</h3>
+                            <p class="post-excerpt">Descubre cómo el entrenamiento funcional puede mejorar tu rendimiento en actividades cotidianas y deportivas.</p>
+                            <div class="post-meta">
+                                <span class="author"><i class="fas fa-user"></i> Coach Roberto</span>
+                                <span class="date"><i class="fas fa-calendar-alt"></i> 1 Mayo 2023</span>
+                            </div>
+                            <a href="#" class="read-more">Leer más <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="post-card" data-category="nutricion">
+                        <div class="post-image">
+                            <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Suplementos deportivos">
+                            <div class="category-badge">Nutrición</div>
+                        </div>
+                        <div class="post-content">
+                            <h3 class="post-title">Guía de suplementos para principiantes</h3>
+                            <p class="post-excerpt">Qué suplementos valen la pena y cuáles puedes evitar cuando estás comenzando en el fitness.</p>
+                            <div class="post-meta">
+                                <span class="author"><i class="fas fa-user"></i> Nutrióloga Ana</span>
+                                <span class="date"><i class="fas fa-calendar-alt"></i> 25 Abril 2023</span>
+                            </div>
+                            <a href="#" class="read-more">Leer más <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+                
+                <div class="pagination">
+                    <button class="pagination-button active">1</button>
+                    <button class="pagination-button">2</button>
+                    <button class="pagination-button">3</button>
+                    <button class="pagination-button next">Siguiente <i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter-section">
+            <div class="container">
+                <div class="newsletter-content">
+                    <h2>Suscríbete a nuestro Newsletter</h2>
+                    <p>Recibe artículos exclusivos, tips de entrenamiento y promociones especiales directamente en tu correo.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Tu correo electrónico" required>
+                        <button type="submit">Suscribirme <i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h3>Tribu de Hierro Gym</h3>
+                    <p>Transformando cuerpos y mentes desde 2010. Nuestro objetivo es ayudarte a alcanzar tu mejor versión.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Enlaces rápidos</h4>
+                    <ul>
+                        <li><a href="home.html">Inicio</a></li>
+                        <li><a href="#">Clases</a></li>
+                        <li><a href="#">Entrenadores</a></li>
+                        <li><a href="#">Precios</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contacto</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Av. Hierro 123, Ciudad</p>
+                    <p><i class="fas fa-phone"></i> (55) 1234-5678</p>
+                    <p><i class="fas fa-envelope"></i> contacto@tribudehierro.com</p>
+                    <p><i class="fas fa-clock"></i> Lunes-Viernes: 5:00 - 23:00</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Tribu de Hierro Gym. Todos los derechos reservados.</p>
+                <div class="legal-links">
+                    <a href="#">Términos y condiciones</a>
+                    <a href="#">Política de privacidad</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/blog.js"></script>
+</body>
+</html>

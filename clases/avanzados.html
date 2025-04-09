@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light" data-color-scheme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Programas avanzados de musculación para atletas experimentados. Técnicas profesionales, periodización avanzada y análisis biomecánico.">
+    <title>EliteFit - Musculación Avanzada</title>
+    <link rel="stylesheet" href="/clases/css/avanzados.css">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Open+Sans:wght@400;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Open+Sans:wght@400;600;700&display=swap"></noscript>
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"></noscript>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💪</text></svg>">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+    
+    <header class="header" role="banner">
+        <div class="container">
+            <a href="#" class="logo" aria-label="EliteFit - Inicio">
+                <svg class="logo-svg" width="40" height="40" viewBox="0 0 40 40" aria-hidden="true" focusable="false">
+                    <path class="logo-path" d="M20,0 L30,15 L40,0 L40,15 L30,30 L40,45 L40,60 L30,45 L20,60 L10,45 L0,60 L0,45 L10,30 L0,15 L0,0 L10,15 Z" fill="currentColor"/>
+                </svg>
+                <span>EliteFit</span>
+            </a>
+            
+            <nav class="nav" role="navigation" aria-label="Navegación principal">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#methodology" class="nav-link" data-text="Metodología">Metodología</a></li>
+                    <li class="nav-item"><a href="#programs" class="nav-link" data-text="Programas">Programas</a></li>
+                    <li class="nav-item"><a href="#biomechanics" class="nav-link" data-text="Biomecánica">Biomecánica</a></li>
+                    <li class="nav-item"><a href="#coaching" class="nav-link" data-text="Coaching">Coaching</a></li>
+                    <li class="nav-item"><a href="#research" class="nav-link" data-text="Investigación">Investigación</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-actions">
+                <button class="theme-toggle" aria-label="Cambiar modo claro/oscuro" aria-pressed="false">
+                    <span class="theme-icon" aria-hidden="true"></span>
+                </button>
+                <a href="#membership" class="btn btn-primary btn-sm">Acceso Elite</a>
+            </div>
+            
+            <button class="menu-toggle" aria-label="Menú móvil" aria-expanded="false" aria-controls="mobile-menu">
+                <span class="menu-bar"></span>
+                <span class="menu-bar"></span>
+                <span class="menu-bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <main id="main-content" class="main-content" role="main">
+        <section id="hero" class="hero scroll-section" aria-labelledby="hero-heading">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="badge" aria-hidden="true">Nivel Avanzado</div>
+                    <h1 id="hero-heading">Optimización <span class="highlight">Extrema</span> del Rendimiento</h1>
+                    <p class="lead">Técnicas profesionales, periodización avanzada y análisis biomecánico para atletas que buscan la excelencia.</p>
+                    <div class="cta-buttons">
+                        <a href="#programs" class="btn btn-primary" aria-label="Explorar programas avanzados">Programas Elite</a>
+                        <a href="#biomechanics" class="btn btn-secondary" aria-label="Conocer análisis biomecánico">Análisis Pro</a>
+                    </div>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <div class="stat-value" data-count="95">0</div>
+                            <div class="stat-label">% de atletas mejoran marcas</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value" data-count="12">0</div>
+                            <div class="stat-label">Sistemas de periodización</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value" data-count="24">0</div>
+                            <div class="stat-label">Parámetros biomecánicos</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-media">
+                    <div class="media-container">
+                        <div class="media-mask" aria-hidden="true">
+                            <div class="lazy-image" data-src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" aria-label="Atleta avanzado realizando sentadilla"></div>
+                        </div>
+                        <div class="media-overlay" aria-hidden="true"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="scroll-indicator" aria-hidden="true">
+                <div class="mouse">
+                    <div class="scroller"></div>
+                </div>
+                <span>Explorar</span>
+            </div>
+        </section>
+
+        <section id="methodology" class="methodology-section scroll-section" aria-labelledby="methodology-heading">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="methodology-heading">Metodología <span class="highlight">Científica</span></h2>
+                    <p class="section-description">Basada en investigación de vanguardia y adaptada a tus características individuales.</p>
+                </header>
+                
+                <div class="methodology-grid">
+                    <article class="method-card" aria-labelledby="method1-heading">
+                        <div class="card-visual">
+                            <div class="visual-container">
+                                <svg class="method-icon" viewBox="0 0 100 100" aria-hidden="true">
+                                    <path d="M50,10 L90,50 L50,90 L10,50 Z" fill="none" stroke="currentColor" stroke-width="8"/>
+                                    <path d="M30,50 L70,50" stroke="currentColor" stroke-width="8" stroke-linecap="round"/>
+                                    <path d="M50,30 L50,70" stroke="currentColor" stroke-width="8" stroke-linecap="round"/>
+                                </svg>
+                                <div class="visual-overlay" aria-hidden="true"></div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3 id="method1-heading">Periodización Conjugada Avanzada</h3>
+                            <p>Integración simultánea de múltiples cualidades físicas con énfasis en transferencia cruzada y especificidad.</p>
+                            <ul class="method-features">
+                                <li>Secuenciación de habilidades motoras</li>
+                                <li>Manipulación de variables de carga</li>
+                                <li>Estructuración de bloques interconectados</li>
+                            </ul>
+                            <a href="#" class="btn btn-outline btn-sm" aria-label="Más sobre periodización conjugada">Ver protocolos</a>
+                        </div>
+                    </article>
+                    
+                    <article class="method-card" aria-labelledby="method2-heading">
+                        <div class="card-visual">
+                            <div class="visual-container">
+                                <svg class="method-icon" viewBox="0 0 100 100" aria-hidden="true">
+                                    <path d="M20,50 Q50,10 80,50 T20,50" fill="none" stroke="currentColor" stroke-width="8"/>
+                                    <circle cx="50" cy="50" r="15" fill="currentColor"/>
+                                </svg>
+                                <div class="visual-overlay" aria-hidden="true"></div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3 id="method2-heading">Entrenamiento Específico por Deporte</h3>
+                            <p>Adaptación de patrones motores y desarrollo de cualidades físicas específicas para tu disciplina.</p>
+                            <ul class="method-features">
+                                <li>Análisis de gestos deportivos</li>
+                                <li>Transferencia a rendimiento</li>
+                                <li>Desarrollo de potencia específica</li>
+                            </ul>
+                            <a href="#" class="btn btn-outline btn-sm" aria-label="Más sobre entrenamiento específico">Ver disciplinas</a>
+                        </div>
+                    </article>
+                    
+                    <article class="method-card" aria-labelledby="method3-heading">
+                        <div class="card-visual">
+                            <div class="visual-container">
+                                <svg class="method-icon" viewBox="0 0 100 100" aria-hidden="true">
+                                    <path d="M20,20 L80,20 L80,80 L20,80 Z" fill="none" stroke="currentColor" stroke-width="8"/>
+                                    <path d="M35,35 L65,35 L65,65 L35,65 Z" fill="none" stroke="currentColor" stroke-width="8"/>
+                                    <line x1="20" y1="20" x2="35" y2="35" stroke="currentColor" stroke-width="8"/>
+                                    <line x1="80" y1="20" x2="65" y2="35" stroke="currentColor" stroke-width="8"/>
+                                    <line x1="80" y1="80" x2="65" y2="65" stroke="currentColor" stroke-width="8"/>
+                                    <line x1="20" y1="80" x2="35" y2="65" stroke="currentColor" stroke-width="8"/>
+                                </svg>
+                                <div class="visual-overlay" aria-hidden="true"></div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3 id="method3-heading">Modelización Biomecánica Individual</h3>
+                            <p>Análisis cuantitativo de tus patrones de movimiento para optimizar técnica y prevenir lesiones.</p>
+                            <ul class="method-features">
+                                <li>Evaluación cinemática 3D</li>
+                                <li>Análisis de fuerzas articulares</li>
+                                <li>Optimización de palancas</li>
+                            </ul>
+                            <a href="#" class="btn btn-outline btn-sm" aria-label="Más sobre modelización biomecánica">Ver análisis</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="programs" class="programs-section scroll-section" aria-labelledby="programs-heading">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="programs-heading">Programas <span class="highlight">Elite</span></h2>
+                    <p class="section-description">Sistemas de entrenamiento diseñados para atletas con años de experiencia.</p>
+                </header>
+                
+                <div class="program-tabs" role="tablist" aria-label="Tipos de programas">
+                    <button class="tab-button active" role="tab" aria-selected="true" aria-controls="strength-tab" id="strength-tab-btn">
+                        Fuerza Máxima
+                    </button>
+                    <button class="tab-button" role="tab" aria-selected="false" aria-controls="hypertrophy-tab" id="hypertrophy-tab-btn" tabindex="-1">
+                        Hipertrofia Funcional
+                    </button>
+                    <button class="tab-button" role="tab" aria-selected="false" aria-controls="power-tab" id="power-tab-btn" tabindex="-1">
+                        Desarrollo de Potencia
+                    </button>
+                </div>
+                
+                <div class="tab-content active" id="strength-tab" role="tabpanel" aria-labelledby="strength-tab-btn" tabindex="0">
+                    <div class="program-grid">
+                        <div class="program-info">
+                            <h3>Sistema de Fuerza Avanzada</h3>
+                            <p class="program-description">Protocolos especializados para superar mesetas en levantamientos compuestos y maximizar tu 1RM.</p>
+                            
+                            <div class="program-stats">
+                                <div class="stat">
+                                    <div class="stat-icon" aria-hidden="true">
+                                        <i class="fas fa-dumbbell"></i>
+                                    </div>
+                                    <div class="stat-content">
+                                        <div class="stat-value">85-100%</div>
+                                        <div class="stat-label">Intensidad</div>
+                                    </div>
+                                </div>
+                                <div class="stat">
+                                    <div class="stat-icon" aria-hidden="true">
+                                        <i class="fas fa-clock"></i>
+                                    </div>
+                                    <div class="stat-content">
+                                        <div class="stat-value">3-5 min</div>
+                                        <div class="stat-label">Descanso</div>
+                                    </div>
+                                </div>
+                                <div class="stat">
+                                    <div class="stat-icon" aria-hidden="true">
+                                        <i class="fas fa-calendar-alt"></i>
+                                    </div>
+                                    <div class="stat-content">
+                                        <div class="stat-value">8-12 sem</div>
+                                        <div class="stat-label">Duración</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <h4>Métodos incluidos:</h4>
+                            <ul class="method-list">
+                                <li>Cluster Sets con sobrecarga excéntrica</li>
+                                <li>Ondulación intra-sesión</li>
+                                <li>Pirámides inversas</li>
+                                <li>Contraste de carga</li>
+                            </ul>
+                            
+                            <a href="#" class="btn btn-primary" aria-label="Más detalles sobre sistema de fuerza avanzada">Ver programa completo</a>
+                        </div>
+                        
+                        <div class="program-visual">
+                            <div class="visual-container">
+                                <div class="graph-container">
+                                    <canvas id="strength-chart" width="400" height="300" aria-label="Gráfico de progresión de fuerza" role="img"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tab-content" id="hypertrophy-tab" role="tabpanel" aria-labelledby="hypertrophy-tab-btn" tabindex="0" hidden>
+                    <div class="program-grid">
+                        <div class="program-info">
+                            <h3>Hipertrofia Funcional Avanzada</h3>
+                            <p class="program-description">Estrategias para maximizar el crecimiento muscular manteniendo cualidades atléticas y funcionales.</p>
+                            
+                            <div class="program-stats">
+                                <div class="stat">
+                                    <div class="stat-icon" aria-hidden="true">
+                                        <i class="fas fa-dumbbell"></i>
+                                    </div>
+                                    <div class="stat-content">
+                                        <div class="stat-value">70-85%</div>
+                                        <div class="stat-label">Intensidad</div>
+                                    </div>
+                                </div>
+                                <div class="stat">
+                                    <div class="stat-icon" aria-hidden="true">
+                                        <i class="fas fa-clock"></i>
+                                    </div>
+                                    <div class="stat-content">
+                                        <div class="stat-value">60-90s</div>
+                                        <div class="stat-label">Descanso</div>
+                                    </div>
+                                </div>
+                                <div class="stat">
+                                    <div class="stat-icon" aria-hidden="true">
+                                        <i class="fas fa-calendar-alt"></i>
+                                    </div>
+                                    <div class="stat-content">
+                                        <div class="stat-value">6-8 sem</div>
+                                        <div class="stat-label">Duración</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <h4>Métodos incluidos:</h4>
+                            <ul class="method-list">
+                                <li>Myo-reps con sobrecarga progresiva</li>
+                                <li>Drop sets mecánicos</li>
+                                <li>Contraste de tensión mecánica/metabólica</li>
+                                <li>Clusters de densidad</li>
+                            </ul>
+                            
+                            <a href="#" class="btn btn-primary" aria-label="Más detalles sobre hipertrofia funcional avanzada">Ver programa completo</a>
+                        </div>
+                        
+                        <div class="program-visual">
+                            <div class="visual-container">
+                                <div class="graph-container">
+                                    <canvas id="hypertrophy-chart" width="400" height="300" aria-label="Gráfico de progresión de hipertrofia" role="img"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tab-content" id="power-tab" role="tabpanel" aria-labelledby="power-tab-btn" tabindex="0" hidden>
+                    <div class="program-grid">
+                        <div class="program-info">
+                            <h3>Sistema de Desarrollo de Potencia</h3>
+                            <p class="program-description">Protocolos para maximizar la tasa de desarrollo de fuerza y potencia explosiva.</p>
+                            
+                            <div class="program-stats">
+                                <div class="stat">
+                                    <div class="stat-icon" aria-hidden="true">
+                                        <i class="fas fa-dumbbell"></i>
+                                    </div>
+                                    <div class="stat-content">
+                                        <div class="stat-value">30-70%</div>
+                                        <div class="stat-label">Intensidad</div>
+                                    </div>
+                                </div>
+                                <div class="stat">
+                                    <div class="stat-icon" aria-hidden="true">
+                                        <i class="fas fa-clock"></i>
+                                    </div>
+                                    <div class="stat-content">
+                                        <div class="stat-value">2-4 min</div>
+                                        <div class="stat-label">Descanso</div>
+                                    </div>
+                                </div>
+                                <div class="stat">
+                                    <div class="stat-icon" aria-hidden="true">
+                                        <i class="fas fa-calendar-alt"></i>
+                                    </div>
+                                    <div class="stat-content">
+                                        <div class="stat-value">4-6 sem</div>
+                                        <div class="stat-label">Duración</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <h4>Métodos incluidos:</h4>
+                            <ul class="method-list">
+                                <li>Contraste de carga complejo</li>
+                                <li>Oscilación de resistencia</li>
+                                <li>Entrenamiento de velocidad compensatoria</li>
+                                <li>Clusters de potencia</li>
+                            </ul>
+                            
+                            <a href="#" class="btn btn-primary" aria-label="Más detalles sobre sistema de desarrollo de potencia">Ver programa completo</a>
+                        </div>
+                        
+                        <div class="program-visual">
+                            <div class="visual-container">
+                                <div class="graph-container">
+                                    <canvas id="power-chart" width="400" height="300" aria-label="Gráfico de progresión de potencia" role="img"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="biomechanics" class="biomechanics-section scroll-section" aria-labelledby="biomechanics-heading">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="biomechanics-heading">Análisis <span class="highlight">Biomecánico</span></h2>
+                    <p class="section-description">Optimización técnica basada en datos cuantitativos para maximizar eficiencia y prevenir lesiones.</p>
+                </header>
+                
+                <div class="biomechanics-grid">
+                    <div class="analysis-card">
+                        <div class="card-header">
+                            <h3>Evaluación de Movimiento 3D</h3>
+                            <div class="card-icon" aria-hidden="true">
+                                <i class="fas fa-vector-square"></i>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <p>Análisis tridimensional de tus patrones de movimiento para identificar ineficiencias mecánicas.</p>
+                            <ul class="analysis-features">
+                                <li>Angulaciones articulares</li>
+                                <li>Trayectorias de carga</li>
+                                <li>Secuenciación motora</li>
+                            </ul>
+                        </div>
+                        <div class="card-visual">
+                            <div class="visual-container">
+                                <div class="lazy-image" data-src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" aria-hidden="true"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="analysis-card">
+                        <div class="card-header">
+                            <h3>Análisis de Fuerzas</h3>
+                            <div class="card-icon" aria-hidden="true">
+                                <i class="fas fa-weight-hanging"></i>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <p>Evaluación de distribución de cargas en estructuras articulares y tejidos blandos.</p>
+                            <ul class="analysis-features">
+                                <li>Momento de fuerza articular</li>
+                                <li>Vectores de resistencia</li>
+                                <li>Eficiencia mecánica</li>
+                            </ul>
+                        </div>
+                        <div class="card-visual">
+                            <div class="visual-container">
+                                <div class="lazy-image" data-src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" aria-hidden="true"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="analysis-card">
+                        <div class="card-header">
+                            <h3>Optimización Técnica</h3>
+                            <div class="card-icon" aria-hidden="true">
+                                <i class="fas fa-tachometer-alt"></i>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <p>Ajustes precisos para maximizar rendimiento y minimizar estrés articular.</p>
+                            <ul class="analysis-features">
+                                <li>Posicionamiento óptimo</li>
+                                <li>Secuencia de activación</li>
+                                <li>Control motor avanzado</li>
+                            </ul>
+                        </div>
+                        <div class="card-visual">
+                            <div class="visual-container">
+                                <div class="lazy-image" data-src="https://images.unsplash.com/photo-1571019613566-2e8f8a5e0d6d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" aria-hidden="true"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="biomechanics-cta">
+                    <div class="cta-content">
+                        <h3>Programa tu Evaluación Biomecánica</h3>
+                        <p>Nuestros especialistas realizarán un análisis completo y te proporcionarán un informe detallado con recomendaciones personalizadas.</p>
+                    </div>
+                    <div class="cta-action">
+                        <a href="#" class="btn btn-secondary">Solicitar Análisis</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="coaching" class="coaching-section scroll-section" aria-labelledby="coaching-heading">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="coaching-heading">Coaching <span class="highlight">Elite</span></h2>
+                    <p class="section-description">Soporte personalizado de nuestros entrenadores certificados para llevar tu rendimiento al máximo nivel.</p>
+                </header>
+                
+                <div class="coaching-tiers">
+                    <article class="tier-card" aria-labelledby="tier1-heading">
+                        <div class="card-header">
+                            <h3 id="tier1-heading">Plan Básico</h3>
+                            <div class="tier-price">$99<span>/mes</span></div>
+                        </div>
+                        <div class="card-content">
+                            <ul class="tier-features">
+                                <li>Programación mensual personalizada</li>
+                                <li>Revisión técnica semanal</li>
+                                <li>Acceso a comunidad Elite</li>
+                                <li>Análisis de vídeo básico</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-outline" aria-label="Suscribirse al plan básico">Seleccionar</a>
+                        </div>
+                    </article>
+                    
+                    <article class="tier-card featured" aria-labelledby="tier2-heading">
+                        <div class="card-badge">Recomendado</div>
+                        <div class="card-header">
+                            <h3 id="tier2-heading">Plan Avanzado</h3>
+                            <div class="tier-price">$199<span>/mes</span></div>
+                        </div>
+                        <div class="card-content">
+                            <ul class="tier-features">
+                                <li>Programación semanal personalizada</li>
+                                <li>Revisión técnica diaria</li>
+                                <li>Análisis de vídeo detallado</li>
+                                <li>Sesiones de ajuste mensuales</li>
+                                <li>Acceso prioritario a coach</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-primary" aria-label="Suscribirse al plan avanzado">Seleccionar</a>
+                        </div>
+                    </article>
+                    
+                    <article class="tier-card" aria-labelledby="tier3-heading">
+                        <div class="card-header">
+                            <h3 id="tier3-heading">Plan Elite</h3>
+                            <div class="tier-price">$399<span>/mes</span></div>
+                        </div>
+                        <div class="card-content">
+                            <ul class="tier-features">
+                                <li>Programación diaria personalizada</li>
+                                <li>Soporte ilimitado por coach</li>
+                                <li>Análisis biomecánico completo</li>
+                                <li>Sesiones 1:1 mensuales</li>
+                                <li>Plan nutricional avanzado</li>
+                                <li>Evaluaciones físicas regulares</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-outline" aria-label="Suscribirse al plan elite">Seleccionar</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="research" class="research-section scroll-section" aria-labelledby="research-heading">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="research-heading">Investigación <span class="highlight">Aplicada</span></h2>
+                    <p class="section-description">Nuestros últimos estudios y artículos sobre entrenamiento avanzado.</p>
+                </header>
+                
+                <div class="research-grid">
+                    <article class="research-card" aria-labelledby="research1-heading">
+                        <div class="card-image">
+                            <div class="lazy-image" data-src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" aria-hidden="true"></div>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-meta">
+                                <span class="meta-category">Fuerza Máxima</span>
+                                <time datetime="2023-06-15">Junio 15, 2023</time>
+                            </div>
+                            <h3 id="research1-heading">Efectos de la Sobrecarga Excéntrica en el Rendimiento de Fuerza</h3>
+                            <p class="card-excerpt">Estudio controlado que demuestra aumentos del 12-18% en 1RM tras 8 semanas de entrenamiento con sobrecarga excéntrica.</p>
+                            <a href="#" class="card-link" aria-label="Leer más sobre efectos de sobrecarga excéntrica">Leer más</a>
+                        </div>
+                    </article>
+                    
+                    <article class="research-card" aria-labelledby="research2-heading">
+                        <div class="card-image">
+                            <div class="lazy-image" data-src="https://images.unsplash.com/photo-1571019613566-2e8f8a5e0d6d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" aria-hidden="true"></div>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-meta">
+                                <span class="meta-category">Hipertrofia</span>
+                                <time datetime="2023-05-22">Mayo 22, 2023</time>
+                            </div>
+                            <h3 id="research2-heading">Optimización del Volumen de Entrenamiento para Hipertrofia</h3>
+                            <p class="card-excerpt">Análisis de la relación dosis-respuesta en atletas avanzados y su adaptación al volumen de entrenamiento.</p>
+                            <a href="#" class="card-link" aria-label="Leer más sobre optimización de volumen para hipertrofia">Leer más</a>
+                        </div>
+                    </article>
+                    
+                    <article class="research-card" aria-labelledby="research3-heading">
+                        <div class="card-image">
+                            <div class="lazy-image" data-src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" aria-hidden="true"></div>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-meta">
+                                <span class="meta-category">Biomecánica</span>
+                                <time datetime="2023-04-10">Abril 10, 2023</time>
+                            </div>
+                            <h3 id="research3-heading">Análisis Cinemático del Press de Banca en Powerlifters</h3>
+                            <p class="card-excerpt">Estudio comparativo de patrones de movimiento entre novatos y atletas avanzados en press de banca.</p>
+                            <a href="#" class="card-link" aria-label="Leer más sobre análisis cinemático del press de banca">Leer más</a>
+                        </div>
+                    </article>
+                </div>
+                
+                <div class="research-cta">
+                    <a href="#" class="btn btn-primary" aria-label="Ver todas las investigaciones">Ver Todas las Investigaciones</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="membership" class="membership-section scroll-section" aria-labelledby="membership-heading">
+            <div class="container">
+                <div class="membership-grid">
+                    <div class="membership-content">
+                        <h2 id="membership-heading">Únete a la <span class="highlight">Comunidad Elite</span></h2>
+                        <p class="lead">Acceso exclusivo a nuestros programas avanzados, investigaciones y soporte de expertos.</p>
+                        
+                        <ul class="membership-features">
+                            <li>
+                                <div class="feature-icon" aria-hidden="true">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <h3>Seguimiento Avanzado</h3>
+                                    <p>Analiza tus progresos con nuestras herramientas de tracking y gráficos detallados.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="feature-icon" aria-hidden="true">
+                                    <i class="fas fa-video"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <h3>Análisis de Técnica</h3>
+                                    <p>Envía tus videos y recibe feedback detallado sobre tu ejecución.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="feature-icon" aria-hidden="true">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <h3>Grupo Exclusivo</h3>
+                                    <p>Discute estrategias con otros atletas avanzados y profesionales.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="membership-form">
+                        <div class="form-container">
+                            <h3>Solicitud de Membresía</h3>
+                            <form id="membership-application">
+                                <div class="form-group">
+                                    <label for="name">Nombre Completo</label>
+                                    <input type="text" id="name" name="name" required aria-required="true">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" required aria-required="true">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="experience">Años de Experiencia</label>
+                                    <select id="experience" name="experience" required aria-required="true">
+                                        <option value="">Seleccionar</option>
+                                        <option value="3-5">3-5 años</option>
+                                        <option value="5-7">5-7 años</option>
+                                        <option value="7+">7+ años</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="goals">Objetivos Principales</label>
+                                    <textarea id="goals" name="goals" rows="4" required aria-required="true"></textarea>
+                                </div>
+                                
+                                <button type="submit" class="btn btn-primary">Enviar Solicitud</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo" aria-label="EliteFit - Inicio">
+                        <svg class="logo-svg" width="30" height="30" viewBox="0 0 40 40" aria-hidden="true" focusable="false">
+                            <path class="logo-path" d="M20,0 L30,15 L40,0 L40,15 L30,30 L40,45 L40,60 L30,45 L20,60 L10,45 L0,60 L0,45 L10,30 L0,15 L0,0 L10,15 Z" fill="currentColor"/>
+                        </svg>
+                        <span>EliteFit</span>
+                    </a>
+                    <p class="footer-description">Entrenamiento avanzado para atletas de alto rendimiento.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3 class="footer-heading">Recursos</h3>
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Investigaciones</a></li>
+                        <li><a href="#">Calculadoras</a></li>
+                        <li><a href="#">Glosario</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h3 class="footer-heading">Programas</h3>
+                    <ul>
+                        <li><a href="#">Fuerza Máxima</a></li>
+                        <li><a href="#">Hipertrofia Funcional</a></li>
+                        <li><a href="#">Desarrollo de Potencia</a></li>
+                        <li><a href="#">Preparación Competitiva</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h3 class="footer-heading">Compañía</h3>
+                    <ul>
+                        <li><a href="#">Sobre Nosotros</a></li>
+                        <li><a href="#">Equipo</a></li>
+                        <li><a href="#">Contacto</a></li>
+                        <li><a href="#">Trabaja con Nosotros</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-newsletter">
+                    <h3 class="footer-heading">Newsletter</h3>
+                    <p>Recibe las últimas investigaciones y estrategias de entrenamiento.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Tu email" required aria-required="true">
+                        <button type="submit" class="btn btn-primary btn-sm" aria-label="Suscribirse al newsletter">Suscribirse</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-legal">
+                    <p>&copy; 2023 EliteFit. Todos los derechos reservados.</p>
+                    <div class="legal-links">
+                        <a href="#">Términos</a>
+                        <a href="#">Privacidad</a>
+                        <a href="#">Cookies</a>
+                    </div>
+                </div>
+                
+                <div class="theme-toggle small">
+                    <button class="theme-toggle-btn" aria-label="Cambiar modo claro/oscuro" aria-pressed="false">
+                        <span class="theme-icon" aria-hidden="true"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="loading-overlay" aria-hidden="true">
+        <div class="loading-spinner">
+            <div class="spinner"></div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+    <script src="/clases/js/avanzadas.js" defer></script>
+</body>
+</html>

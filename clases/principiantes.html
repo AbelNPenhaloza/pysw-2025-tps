@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitStart - Musculación para Principiantes</title>
+    <link rel="stylesheet" href="/clases/css/principiantes.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo" aria-label="FitStart - Inicio">
+                <svg class="logo-svg" width="40" height="40" viewBox="0 0 40 40">
+                    <path class="logo-path" d="M20,0 L40,20 L20,40 L0,20 Z" fill="var(--primary-color)"/>
+                    <circle cx="20" cy="20" r="10" fill="var(--bg-color)"/>
+                </svg>
+                <span>FitStart</span>
+            </a>
+            
+            <nav class="nav">
+                <ul>
+                    <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                    <li><a href="#rutinas" class="nav-link">Rutinas</a></li>
+                    <li><a href="#nutricion" class="nav-link">Nutrición</a></li>
+                    <li><a href="#equipo" class="nav-link">Equipo</a></li>
+                    <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+            
+            <button class="theme-toggle" aria-label="Cambiar modo claro/oscuro">
+                <i class="fas fa-moon"></i>
+            </button>
+            
+            <button class="menu-toggle" aria-label="Menú móvil" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section id="inicio" class="hero scroll-section">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Transforma tu cuerpo <span class="highlight">sin complicaciones</span></h1>
+                    <p class="lead">La guía definitiva para principiantes en musculación. Aprende las bases, evita errores comunes y consigue resultados desde el primer día.</p>
+                    <div class="cta-buttons">
+                        <a href="#rutinas" class="btn btn-primary" aria-label="Ver rutinas de entrenamiento">Comenzar ahora</a>
+                        <a href="#nutricion" class="btn btn-secondary" aria-label="Aprender sobre nutrición">Aprende más</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-clip-path"></div>
+                </div>
+            </div>
+            
+            <div class="scroll-indicator">
+                <div class="mouse">
+                    <div class="scroller"></div>
+                </div>
+                <span>Desplázate</span>
+            </div>
+        </section>
+
+        <section id="rutinas" class="routine-section scroll-section">
+            <div class="container">
+                <h2>Rutinas para <span class="highlight">Principiantes</span></h2>
+                <p class="section-description">Elige el plan que mejor se adapte a tus objetivos y disponibilidad.</p>
+                
+                <div class="routine-cards">
+                    <div class="routine-card">
+                        <div class="card-icon">
+                            <svg width="50" height="50" viewBox="0 0 24 24">
+                                <path d="M12,2L4,5v6.09c0,5.05 3.41,9.76 8,10.91c4.59-1.15 8-5.86 8-10.91V5L12,2z" fill="none" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <h3>Full Body</h3>
+                        <p>3 días por semana, ejercicios compuestos para trabajar todo el cuerpo en cada sesión.</p>
+                        <ul class="routine-features">
+                            <li>Ideal para los primeros 3 meses</li>
+                            <li>Enfoque en técnica</li>
+                            <li>Adaptable a casa/gimnasio</li>
+                        </ul>
+                        <a href="#" class="btn btn-outline" aria-label="Ver detalles de rutina Full Body">Ver rutina</a>
+                    </div>
+                    
+                    <div class="routine-card featured">
+                        <div class="card-badge">Recomendado</div>
+                        <div class="card-icon">
+                            <svg width="50" height="50" viewBox="0 0 24 24">
+                                <path d="M12,3c3.31,0 6,2.69 6,6c0,2.35 -1.29,4.38 -3.2,5.5l0,5.5h-5.6l0,-5.5c-1.91,-1.12 -3.2,-3.15 -3.2,-5.5c0,-3.31 2.69,-6 6,-6z" fill="none" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <h3>Torso/Pierna</h3>
+                        <p>4 días por semana, divide el trabajo entre parte superior e inferior para mejor recuperación.</p>
+                        <ul class="routine-features">
+                            <li>Perfecto después de Full Body</li>
+                            <li>Mayor volumen por músculo</li>
+                            <li>Resultados más rápidos</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary" aria-label="Ver detalles de rutina Torso/Pierna">Ver rutina</a>
+                    </div>
+                    
+                    <div class="routine-card">
+                        <div class="card-icon">
+                            <svg width="50" height="50" viewBox="0 0 24 24">
+                                <path d="M12,21c3.5,0 6,-3 6,-6c0,-2 -1,-3 -3,-4l0,-2.5c0,-1.38 -1.12,-2.5 -2.5,-2.5c-0.17,0 -0.34,0.02 -0.5,0.05c-0.16,-0.03 -0.33,-0.05 -0.5,-0.05c-1.38,0 -2.5,1.12 -2.5,2.5l0,2.5c-2,1 -3,2 -3,4c0,3 2.5,6 6,6z" fill="none" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <h3>Push/Pull/Legs</h3>
+                        <p>6 días por semana, rutina avanzada que divide los grupos musculares por función.</p>
+                        <ul class="routine-features">
+                            <li>Para después de 6 meses</li>
+                            <li>Máximo enfoque muscular</li>
+                            <li>Requiere buena recuperación</li>
+                        </ul>
+                        <a href="#" class="btn btn-outline" aria-label="Ver detalles de rutina Push/Pull/Legs">Ver rutina</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="nutricion" class="nutrition-section scroll-section">
+            <div class="container">
+                <div class="nutrition-content">
+                    <h2>Nutrición <span class="highlight">Esencial</span></h2>
+                    <p>El 70% de tus resultados dependen de lo que comes. Aprende los fundamentos de la nutrición para musculación.</p>
+                    
+                    <div class="nutrition-steps">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h3>Calcula tus calorías</h3>
+                                <p>Usa nuestra calculadora para determinar tus necesidades calóricas según tus objetivos.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h3>Distribución de macros</h3>
+                                <p>Aprende la proporción ideal de proteínas, carbohidratos y grasas para ganar músculo.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h3>Suplementación básica</h3>
+                                <p>Descubre los únicos suplementos que realmente necesitas como principiante.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="#" class="btn btn-primary" aria-label="Aprender más sobre nutrición">Guía Completa</a>
+                </div>
+                
+                <div class="nutrition-image">
+                    <div class="image-mask"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="equipo" class="equipment-section scroll-section">
+            <div class="container">
+                <h2>Equipo <span class="highlight">Básico</span></h2>
+                <p class="section-description">No necesitas mucho para empezar, pero estos elementos harán tu entrenamiento más efectivo.</p>
+                
+                <div class="equipment-grid">
+                    <div class="equipment-item">
+                        <div class="equipment-icon">
+                            <i class="fas fa-dumbbell"></i>
+                        </div>
+                        <h3>Mancuernas ajustables</h3>
+                        <p>Versátiles y compactas, perfectas para entrenar en casa con poco espacio.</p>
+                    </div>
+                    
+                    <div class="equipment-item">
+                        <div class="equipment-icon">
+                            <i class="fas fa-tshirt"></i>
+                        </div>
+                        <h3>Ropa adecuada</h3>
+                        <p>Prendas transpirables que permitan libertad de movimiento.</p>
+                    </div>
+                    
+                    <div class="equipment-item">
+                        <div class="equipment-icon">
+                            <i class="fas fa-water"></i>
+                        </div>
+                        <h3>Botella de agua</h3>
+                        <p>Mantente hidratado durante tus entrenamientos.</p>
+                    </div>
+                    
+                    <div class="equipment-item">
+                        <div class="equipment-icon">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <h3>Diario de entrenamiento</h3>
+                        <p>Registra tus progresos para mantener la motivación.</p>
+                    </div>
+                    
+                    <div class="equipment-item">
+                        <div class="equipment-icon">
+                            <i class="fas fa-weight"></i>
+                        </div>
+                        <h3>Banda de resistencia</h3>
+                        <p>Económicas y efectivas para trabajar la movilidad.</p>
+                    </div>
+                    
+                    <div class="equipment-item">
+                        <div class="equipment-icon">
+                            <i class="fas fa-shoe-prints"></i>
+                        </div>
+                        <h3>Zapatillas planas</h3>
+                        <p>Ideales para ejercicios de peso como sentadillas y peso muerto.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="progress-section">
+            <div class="container">
+                <div class="progress-stats">
+                    <div class="stat">
+                        <div class="counter" data-target="95">0</div>
+                        <span>% de principiantes que cometen errores técnicos</span>
+                    </div>
+                    <div class="stat">
+                        <div class="counter" data-target="12">0</div>
+                        <span>Semanas para ver cambios notables</span>
+                    </div>
+                    <div class="stat">
+                        <div class="counter" data-target="78">0</div>
+                        <span>% que abandona en los primeros 3 meses</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="contact-section scroll-section">
+            <div class="container">
+                <div class="contact-form">
+                    <h2>¿Tienes <span class="highlight">dudas</span>?</h2>
+                    <p>Déjanos tu consulta y un entrenador certificado te responderá en menos de 24 horas.</p>
+                    
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Nombre</label>
+                            <input type="text" id="name" name="name" required aria-required="true">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required aria-required="true">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="question">Tu pregunta</label>
+                            <textarea id="question" name="question" rows="4" required aria-required="true"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary" aria-label="Enviar consulta">Enviar consulta</button>
+                    </form>
+                </div>
+                
+                <div class="contact-info">
+                    <h3>También puedes encontrarnos en:</h3>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="faq-preview">
+                        <h4>Preguntas frecuentes</h4>
+                        <div class="faq-item">
+                            <button class="faq-question" aria-expanded="false" aria-controls="faq1">¿Cuánto tiempo debo descansar entre series?</button>
+                            <div class="faq-answer" id="faq1">
+                                <p>Como principiante, recomiendo 60-90 segundos para ejercicios compuestos y 45-60 segundos para ejercicios de aislamiento.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <button class="faq-question" aria-expanded="false" aria-controls="faq2">¿Es necesario tomar proteína en polvo?</button>
+                            <div class="faq-answer" id="faq2">
+                                <p>No es necesario si alcanzas tus requerimientos de proteína con alimentos sólidos, pero puede ser conveniente.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="#" class="logo" aria-label="FitStart - Inicio">
+                        <svg class="logo-svg" width="30" height="30" viewBox="0 0 40 40">
+                            <path class="logo-path" d="M20,0 L40,20 L20,40 L0,20 Z" fill="var(--primary-color)"/>
+                            <circle cx="20" cy="20" r="10" fill="var(--bg-color)"/>
+                        </svg>
+                        <span>FitStart</span>
+                    </a>
+                    <p>La mejor guía para principiantes en musculación.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Enlaces rápidos</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#rutinas">Rutinas</a></li>
+                        <li><a href="#nutricion">Nutrición</a></li>
+                        <li><a href="#equipo">Equipo</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-legal">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Términos y condiciones</a></li>
+                        <li><a href="#">Política de privacidad</a></li>
+                        <li><a href="#">Aviso legal</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 FitStart. Todos los derechos reservados.</p>
+                <div class="theme-toggle small">
+                    <button class="theme-toggle-btn" aria-label="Cambiar modo claro/oscuro">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="loading-spinner" aria-hidden="true">
+        <div class="spinner"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

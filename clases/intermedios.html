@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitPro - Musculación Intermedia</title>
+    <link rel="stylesheet" href="css/intermedios.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo" aria-label="FitPro - Inicio">
+                <svg class="logo-svg" width="40" height="40" viewBox="0 0 40 40">
+                    <path class="logo-path" d="M20,0 L30,10 L40,0 L40,10 L30,20 L40,30 L40,40 L30,30 L20,40 L10,30 L0,40 L0,30 L10,20 L0,10 L0,0 L10,10 Z" fill="var(--primary-color)"/>
+                </svg>
+                <span>FitPro</span>
+            </a>
+            
+            <nav class="nav">
+                <ul>
+                    <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                    <li><a href="#avanzado" class="nav-link">Entrenamiento Avanzado</a></li>
+                    <li><a href="#periodizacion" class="nav-link">Periodización</a></li>
+                    <li><a href="#suplementos" class="nav-link">Suplementación</a></li>
+                    <li><a href="#comunidad" class="nav-link">Comunidad</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-actions">
+                <button class="theme-toggle" aria-label="Cambiar modo claro/oscuro">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <a href="#comunidad" class="btn btn-outline btn-sm">Acceso Pro</a>
+            </div>
+            
+            <button class="menu-toggle" aria-label="Menú móvil" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section id="inicio" class="hero scroll-section">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="badge">Nivel Intermedio</div>
+                    <h1>Lleva tu físico al <span class="highlight">siguiente nivel</span></h1>
+                    <p class="lead">Técnicas avanzadas, programación inteligente y estrategias probadas para superar mesetas y maximizar tus ganancias.</p>
+                    <div class="cta-buttons">
+                        <a href="#avanzado" class="btn btn-primary" aria-label="Explorar técnicas avanzadas">Explorar Técnicas</a>
+                        <a href="#periodizacion" class="btn btn-secondary" aria-label="Ver programas avanzados">Programas Avanzados</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-mask"></div>
+                </div>
+            </div>
+            
+            <div class="scroll-indicator">
+                <div class="mouse">
+                    <div class="scroller"></div>
+                </div>
+                <span>Desplázate</span>
+            </div>
+            
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 50%"></div>
+            </div>
+        </section>
+
+        <section id="avanzado" class="techniques-section scroll-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Técnicas de <span class="highlight">Entrenamiento Avanzado</span></h2>
+                    <p class="section-description">Domina estos métodos para intensificar tus entrenamientos y romper estancamientos.</p>
+                </div>
+                
+                <div class="techniques-grid">
+                    <div class="technique-card">
+                        <div class="card-header">
+                            <div class="card-icon">
+                                <i class="fas fa-fire-alt"></i>
+                            </div>
+                            <h3>Series descendentes</h3>
+                            <div class="difficulty">
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p>Reduce el peso después del fallo muscular para extender la serie y aumentar el estrés metabólico.</p>
+                            <ul class="technique-details">
+                                <li>Ideal para hipertrofia</li>
+                                <li>2-3 descensos por serie</li>
+                                <li>Mínimo descanso entre descensos</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-outline btn-sm" aria-label="Ver detalles de series descendentes">Ver protocolo</a>
+                        </div>
+                    </div>
+                    
+                    <div class="technique-card">
+                        <div class="card-header">
+                            <div class="card-icon">
+                                <i class="fas fa-stopwatch"></i>
+                            </div>
+                            <h3>Resto-Pausa</h3>
+                            <div class="difficulty">
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span class="active"></span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p>Breves pausas dentro de una misma serie para recuperar parcialmente y realizar repeticiones adicionales.</p>
+                            <ul class="technique-details">
+                                <li>Aumenta volumen efectivo</li>
+                                <li>10-15 segundos de pausa</li>
+                                <li>Excelente para fuerza</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-outline btn-sm" aria-label="Ver detalles de resto-pausa">Ver protocolo</a>
+                        </div>
+                    </div>
+                    
+                    <div class="technique-card">
+                        <div class="card-header">
+                            <div class="card-icon">
+                                <i class="fas fa-wave-square"></i>
+                            </div>
+                            <h3>Cluster Sets</h3>
+                            <div class="difficulty">
+                                <span class="active"></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p>Agrupa repeticiones con micro-pausas para mantener alta la calidad de cada repetición.</p>
+                            <ul class="technique-details">
+                                <li>Mejora técnica con cargas altas</li>
+                                <li>3-5 repeticiones por cluster</li>
+                                <li>20-30 segundos entre clusters</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-outline btn-sm" aria-label="Ver detalles de cluster sets">Ver protocolo</a>
+                        </div>
+                    </div>
+                    
+                    <div class="technique-card">
+                        <div class="card-header">
+                            <div class="card-icon">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                            <h3>Pre-exhaustación</h3>
+                            <div class="difficulty">
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p>Aísla un músculo antes de un ejercicio compuesto para maximizar su participación.</p>
+                            <ul class="technique-details">
+                                <li>Prioriza músculos rezagados</li>
+                                <li>Ejemplo: Cruces antes de press</li>
+                                <li>Sin descanso entre ejercicios</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-outline btn-sm" aria-label="Ver detalles de pre-exhaustación">Ver protocolo</a>
+                        </div>
+                    </div>
+                    
+                    <div class="technique-card">
+                        <div class="card-header">
+                            <div class="card-icon">
+                                <i class="fas fa-random"></i>
+                            </div>
+                            <h3>Drop Eccentric</h3>
+                            <div class="difficulty">
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span class="active"></span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p>Enfatiza la fase excéntrica con mayor carga que la concéntrica para mayor daño muscular.</p>
+                            <ul class="technique-details">
+                                <li>20-40% más peso en bajada</li>
+                                <li>3-5 segundos en excéntrico</li>
+                                <li>Asistencia en concéntrico</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-outline btn-sm" aria-label="Ver detalles de drop eccentric">Ver protocolo</a>
+                        </div>
+                    </div>
+                    
+                    <div class="technique-card">
+                        <div class="card-header">
+                            <div class="card-icon">
+                                <i class="fas fa-sync-alt"></i>
+                            </div>
+                            <h3>Ondulación Diaria</h3>
+                            <div class="difficulty">
+                                <span class="active"></span>
+                                <span class="active"></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p>Varía volumen e intensidad diariamente para optimizar adaptación y recuperación.</p>
+                            <ul class="technique-details">
+                                <li>Alterna días pesados/livianos</li>
+                                <li>Mejora ganancias a largo plazo</li>
+                                <li>Reduce riesgo de sobreentrenamiento</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-outline btn-sm" aria-label="Ver detalles de ondulación diaria">Ver protocolo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="periodizacion" class="periodization-section scroll-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Periodización <span class="highlight">Avanzada</span></h2>
+                    <p class="section-description">Estructura tu entrenamiento para maximizar adaptaciones específicas y evitar estancamientos.</p>
+                </div>
+                
+                <div class="periodization-tabs">
+                    <div class="tab-buttons">
+                        <button class="tab-button active" data-tab="block">Periodización en Bloques</button>
+                        <button class="tab-button" data-tab="conjugate">Método Conjugado</button>
+                        <button class="tab-button" data-tab="daily">Ondulación Diaria</button>
+                    </div>
+                    
+                    <div class="tab-content active" id="block">
+                        <div class="tab-grid">
+                            <div class="tab-text">
+                                <h3>Periodización en Bloques</h3>
+                                <p>Divide tu macro ciclo en bloques de 4-6 semanas con objetivos específicos (hipertrofia, fuerza, potencia) para maximizar las adaptaciones.</p>
+                                <ul class="tab-features">
+                                    <li><strong>Bloque de Acumulación:</strong> Alto volumen, intensidad moderada (8-12 reps)</li>
+                                    <li><strong>Bloque de Transformación:</strong> Volumen medio, intensidad alta (5-8 reps)</li>
+                                    <li><strong>Bloque de Realización:</strong> Bajo volumen, máxima intensidad (1-5 reps)</li>
+                                </ul>
+                                <a href="#" class="btn btn-primary" aria-label="Ver plantilla de periodización en bloques">Descargar Plantilla</a>
+                            </div>
+                            <div class="tab-image">
+                                <div class="graph-container">
+                                    <div class="graph" id="block-graph"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-content" id="conjugate">
+                        <div class="tab-grid">
+                            <div class="tab-text">
+                                <h3>Método Conjugado</h3>
+                                <p>Combina el desarrollo de múltiples cualidades físicas (fuerza máxima, potencia e hipertrofia) en la misma semana.</p>
+                                <ul class="tab-features">
+                                    <li><strong>Día Máximo:</strong> Trabajo con cargas >90% 1RM para fuerza</li>
+                                    <li><strong>Día Dinámico:</strong> Movimientos explosivos con 50-70% 1RM</li>
+                                    <li><strong>Día de Repeticiones:</strong> Alto volumen para hipertrofia</li>
+                                </ul>
+                                <a href="#" class="btn btn-primary" aria-label="Ver plantilla de método conjugado">Descargar Plantilla</a>
+                            </div>
+                            <div class="tab-image">
+                                <div class="graph-container">
+                                    <div class="graph" id="conjugate-graph"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-content" id="daily">
+                        <div class="tab-grid">
+                            <div class="tab-text">
+                                <h3>Ondulación Diaria (DUP)</h3>
+                                <p>Varía volumen e intensidad en cada sesión durante la semana para optimizar adaptaciones y recuperación.</p>
+                                <ul class="tab-features">
+                                    <li><strong>Día de Fuerza:</strong> 3-5 reps, 4-6 series, largos descansos</li>
+                                    <li><strong>Día de Hipertrofia:</strong> 8-12 reps, 3-4 series, descansos medios</li>
+                                    <li><strong>Día de Resistencia:</strong> 15-20 reps, 2-3 series, cortos descansos</li>
+                                </ul>
+                                <a href="#" class="btn btn-primary" aria-label="Ver plantilla de ondulación diaria">Descargar Plantilla</a>
+                            </div>
+                            <div class="tab-image">
+                                <div class="graph-container">
+                                    <div class="graph" id="daily-graph"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="suplementos" class="supplements-section scroll-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Suplementación <span class="highlight">Estratégica</span></h2>
+                    <p class="section-description">Optimiza tu rendimiento y recuperación con estos suplementos respaldados por ciencia.</p>
+                </div>
+                
+                <div class="supplements-accordion">
+                    <div class="accordion-item">
+                        <button class="accordion-header" aria-expanded="false" aria-controls="accordion1">
+                            <span class="supplement-category">Proteína</span>
+                            <h3>Proteína en Polvo</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="accordion-content" id="accordion1">
+                            <div class="accordion-grid">
+                                <div class="accordion-text">
+                                    <h4>Beneficios para intermedios</h4>
+                                    <p>Como atleta intermedio con mayores demandas de proteína (1.6-2.2g/kg), los suplementos ayudan a alcanzar tus objetivos sin exceso de calorías.</p>
+                                    
+                                    <h4>Tipos recomendados</h4>
+                                    <ul>
+                                        <li><strong>Whey isolate:</strong> Para post-entreno (rápida absorción)</li>
+                                        <li><strong>Caseína:</strong> Antes de dormir (lenta absorción)</li>
+                                        <li><strong>Blend:</strong> Para mantener niveles durante el día</li>
+                                    </ul>
+                                </div>
+                                <div class="accordion-image">
+                                    <div class="supplement-mockup">
+                                        <div class="mockup-label">Whey Isolate</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <button class="accordion-header" aria-expanded="false" aria-controls="accordion2">
+                            <span class="supplement-category">Rendimiento</span>
+                            <h3>Creatina Monohidrato</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="accordion-content" id="accordion2">
+                            <div class="accordion-grid">
+                                <div class="accordion-text">
+                                    <h4>Beneficios para intermedios</h4>
+                                    <p>Aumenta la capacidad de trabajo en series pesadas (3-8 repeticiones) permitiendo mayor volumen efectivo y mejorando las ganancias de fuerza.</p>
+                                    
+                                    <h4>Protocolo óptimo</h4>
+                                    <ul>
+                                        <li><strong>Dosis:</strong> 5g diarios (sin fase de carga)</li>
+                                        <li><strong>Momento:</strong> Cualquier hora del día</li>
+                                        <li><strong>Sinergias:</strong> Combinar con carbohidratos post-entreno</li>
+                                    </ul>
+                                </div>
+                                <div class="accordion-image">
+                                    <div class="supplement-mockup">
+                                        <div class="mockup-label">Creatina</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <button class="accordion-header" aria-expanded="false" aria-controls="accordion3">
+                            <span class="supplement-category">Energía</span>
+                            <h3>Pre-entrenos</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="accordion-content" id="accordion3">
+                            <div class="accordion-grid">
+                                <div class="accordion-text">
+                                    <h4>Beneficios para intermedios</h4>
+                                    <p>Mejora el enfoque mental y la tolerancia al volumen en atletas intermedios que manejan cargas más altas y mayor fatiga acumulada.</p>
+                                    
+                                    <h4>Ingredientes clave</h4>
+                                    <ul>
+                                        <li><strong>Cafeína:</strong> 3-6mg/kg (dosis óptima)</li>
+                                        <li><strong>Beta-alanina:</strong> Reduce fatiga en series múltiples</li>
+                                        <li><strong>Citrulina Malato:</strong> Mejora bombeo y resistencia</li>
+                                    </ul>
+                                </div>
+                                <div class="accordion-image">
+                                    <div class="supplement-mockup">
+                                        <div class="mockup-label">Pre-Workout</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <button class="accordion-header" aria-expanded="false" aria-controls="accordion4">
+                            <span class="supplement-category">Recuperación</span>
+                            <h3>Omega-3</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="accordion-content" id="accordion4">
+                            <div class="accordion-grid">
+                                <div class="accordion-text">
+                                    <h4>Beneficios para intermedios</h4>
+                                    <p>Reduce la inflamación crónica en atletas intermedios con alto volumen de entrenamiento, mejorando la recuperación entre sesiones.</p>
+                                    
+                                    <h4>Recomendaciones</h4>
+                                    <ul>
+                                        <li><strong>Dosis:</strong> 1-2g de EPA+DHA diarios</li>
+                                        <li><strong>Fuentes:</strong> Aceite de pescado o algas</li>
+                                        <li><strong>Momento:</strong> Con comidas principales</li>
+                                    </ul>
+                                </div>
+                                <div class="accordion-image">
+                                    <div class="supplement-mockup">
+                                        <div class="mockup-label">Omega-3</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="comunidad" class="community-section scroll-section">
+            <div class="container">
+                <div class="community-grid">
+                    <div class="community-content">
+                        <h2>Únete a nuestra <span class="highlight">Comunidad Pro</span></h2>
+                        <p class="lead">Accede a programas personalizados, análisis de técnica y soporte directo de nuestros coaches.</p>
+                        
+                        <div class="community-features">
+                            <div class="feature">
+                                <div class="feature-icon">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <h3>Seguimiento avanzado</h3>
+                                    <p>Analiza tus progresos con nuestras herramientas de tracking y gráficos detallados.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="feature">
+                                <div class="feature-icon">
+                                    <i class="fas fa-video"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <h3>Análisis de técnica</h3>
+                                    <p>Envía tus videos y recibe feedback detallado sobre tu ejecución.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="feature">
+                                <div class="feature-icon">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <h3>Grupo exclusivo</h3>
+                                    <p>Discute estrategias con otros atletas intermedios y avanzados.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="pricing">
+                            <div class="price-card">
+                                <h3>Membresía Mensual</h3>
+                                <div class="price">$29<span>/mes</span></div>
+                                <a href="#" class="btn btn-primary" aria-label="Suscribirse a membresía mensual">Suscribirse</a>
+                            </div>
+                            
+                            <div class="price-card featured">
+                                <div class="badge">Mejor opción</div>
+                                <h3>Membresía Anual</h3>
+                                <div class="price">$249<span>/año</span></div>
+                                <div class="savings">Ahorras $99</div>
+                                <a href="#" class="btn btn-secondary" aria-label="Suscribirse a membresía anual">Suscribirse</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="community-testimonials">
+                        <div class="testimonial-card">
+                            <div class="testimonial-header">
+                                <div class="avatar"></div>
+                                <div class="user-info">
+                                    <h4>Carlos M.</h4>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="testimonial-content">
+                                <p>"En 6 meses con la comunidad pasé mi press banca de 80kg a 110kg. Los programas personalizados y el feedback en técnica marcaron la diferencia."</p>
+                            </div>
+                            <div class="testimonial-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 80%"></div>
+                                </div>
+                                <div class="progress-label">Press Banca: 80kg → 110kg</div>
+                            </div>
+                        </div>
+                        
+                        <div class="testimonial-card">
+                            <div class="testimonial-header">
+                                <div class="avatar female"></div>
+                                <div class="user-info">
+                                    <h4>Ana R.</h4>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="testimonial-content">
+                                <p>"Finalmente superé mi meseta en sentadillas gracias a las técnicas avanzadas y la periodización que me asignaron. Increíble comunidad!"</p>
+                            </div>
+                            <div class="testimonial-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 65%"></div>
+                                </div>
+                                <div class="progress-label">Sentadilla: 90kg → 120kg</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="#" class="logo" aria-label="FitPro - Inicio">
+                        <svg class="logo-svg" width="30" height="30" viewBox="0 0 40 40">
+                            <path class="logo-path" d="M20,0 L30,10 L40,0 L40,10 L30,20 L40,30 L40,40 L30,30 L20,40 L10,30 L0,40 L0,30 L10,20 L0,10 L0,0 L10,10 Z" fill="var(--primary-color)"/>
+                        </svg>
+                        <span>FitPro</span>
+                    </a>
+                    <p>Entrenamiento avanzado para atletas intermedios.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Recursos</h4>
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Calculadoras</a></li>
+                        <li><a href="#">Plantillas</a></li>
+                        <li><a href="#">Investigaciones</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Compañía</h4>
+                    <ul>
+                        <li><a href="#">Sobre nosotros</a></li>
+                        <li><a href="#">Coaches</a></li>
+                        <li><a href="#">Trabaja con nosotros</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-newsletter">
+                    <h4>Newsletter</h4>
+                    <p>Recibe las últimas estrategias de entrenamiento directamente en tu email.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Tu email" required aria-required="true">
+                        <button type="submit" class="btn btn-primary btn-sm" aria-label="Suscribirse al newsletter">Suscribirse</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 FitPro. Todos los derechos reservados.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="loading-spinner" aria-hidden="true">
+        <div class="spinner"></div>
+    </div>
+
+    <script src="script-intermedios.js"></script>
+</body>
+</html>
